@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy Access - Smart Women Advantage</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" type="image/x-icon" href="../../../favicon.ico">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../../../Assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../../Assets/bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../../Assets/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../../../Assets/dist/css/skins/_all-skins.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- Common css -->
+    <link rel="stylesheet" href="../../../Assets/css/common.css">
+    <link rel="stylesheet" href="../../../Chatbot/chatbot-css.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+        <div id="wait" style="display:none;z-index:1000;width:69px;height:89px;position:absolute;top:50%;left:50%;padding:2px;"><img src='../../../Assets/images/demo_wait.gif' width="64" height="64" /><br></div>
+
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+
+            <nav class="navbar  navbar-static-top" id="navbar">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" style="display: none" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <span class="logo-head" style="display: inline-block;margin-left: 20px;padding: 5px 0px;">
+                    <b style="font-weight: 600;font-size: 20px;">Easy Access</b>
+                </span>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+
+        <style type="text/css">
+            li.active,
+            .first>a {
+                display: none;
+            }
+        </style>
+
+        <aside class="main-sidebar" id="sideNavBar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="active treeview menu-open first">
+                        <a href="#">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../Home/Home.html">
+                            <img class="nav-icon" src="../../../Assets/images/home.png">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../MyPolicyLogin/MyPolicyLogin.html">
+                            <img class="nav-icon" src="../../../Assets/images/policy.png">
+                            <span>Policy Login</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../InsurancePlan/InsurancePlan.html">
+                            <img class="nav-icon" src="../../../Assets/images/layers.png">
+                            <span>Insurance Plans</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../PremiumCalculator/PremiumCalculator.html">
+                            <img class="nav-icon" src="../../../Assets/images/paper-pencil-and-calculator.png">
+                            <span>Premium Calculator</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="../../../NeedAnalysis/NeedAnalysis.html">
+                          <img class="nav-icon" src="../../../Assets/images/analysis.png">
+                          <span>Need Analysis</span>
+                        </a>
+                      </li>
+                    <li>
+                        <a href="../../../BuyOnlineProducts/BuyOnlineProducts.html">
+                            <img class="nav-icon" src="../../../Assets/images/shopping-cart.png">
+                            <span>Buy Online Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../UsefulLinks/UsefulLinks.html">
+                            <img class="nav-icon" src="../../../Assets/images/link.png">
+                            <span>Useful Links</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../QueriesAndComplaints/QueriesAndComplaints.html">
+                            <img class="nav-icon" src="../../../Assets/images/customer-service.png">
+                            <span>Query/Complaints</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../RenewalPremium-PreLogin/RenewalPremium-PreLogin.html">
+                            <img class="nav-icon" src="../../../Assets/images/recycle-sign.png">
+                            <span>Pay Renewal Premium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../News/News.html">
+                            <img class="nav-icon" src="../../../Assets/images/newspaper.png">
+                            <span>News</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="../../../Let'sChat-RIA/Let'sChat-RIA.html">
+                            <img class="nav-icon" src="../../../Assets/images/user-1.png">
+                            <span>Let's Chat - RIA</span>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="../../../ProductExplainerVideos/ProductExplainerVideos.html">
+                            <img class="nav-icon" src="../../../Assets/images/pre-sales_viedo.png">
+                            <span>Product Explainer Videos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../ContactUs/ContactUs.html">
+                            <img class="nav-icon" src="../../../Assets/images/contact.png">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../Settings/Settings.html">
+                            <img class="nav-icon" src="../../../Assets/images/settings.png">
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <!-- Main content -->
+            <section class="content fixedContent">
+                <!-- Main div start from here-->
+                <!-- cards -->
+                <div class="box-header pageHeaderDiv" style="padding-top: 0px;">
+                    <h3 class="box-title">
+                        <div>
+                            <span class="productName" id="productNameId">
+                            </span>
+                            <span class="productCode" id="uinNumberId"></span>
+                        </div>
+                    </h3>
+                </div>
+                <div class="container scrollableContent element" style="width: unset;padding:0px">
+                    <form class="premium_calculator" onsubmit="return false"
+                        name="smartWomenAdvantageForm" id="smartWomenAdvantage">
+
+                        <div>
+                            <span class="productName" id="productNameId">
+                            </span>
+                            <span class="productCode" id="uinNumberId"></span>
+                        </div>
+
+                        <h4 style="padding-bottom: 10px;border-bottom: 1px solid #ccc;color: #3766b4;">SBI LIFE -
+                            Smart Women Advantage</h4>
+
+                        <div class="row">
+                            <div class="col-md-6 gender">
+                                <p class="text-bold">Gender</p>
+                                <!-- <input type="radio" name="gender" class="hidden" value="Male" id="male" onchange="validateGender()">
+                <label for="male" id="male_label"></label> -->
+                                <input type="radio" name="gender" class="hidden" value="Female" id="female"
+                                    onchange="validateGender()">
+                                <label for="female" id="female_label"></label>
+                            </div>
+                            <div class="row errColor" id="genderErrId"> </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p class="text-bold">Name</p>
+                                <select class="form-control" name="selTitle"
+                                    style="display: inline;width: 10%;padding: 1px;border: 1px solid #a9a9a9;">
+                                    <!-- <option value="Mr.">Mr.</option> -->
+                                    <option value="Ms.">Ms.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                </select>
+
+                                <input type="text" name="first_name" class="form-control input" placeholder="First Name"
+                                    style="display: inline;width: 29%;" required>
+                                <input type="text" name="middle_name" class="form-control input"
+                                    placeholder="Middle Name" style="display: inline;width: 29%;">
+                                <input type="text" name="last_name" class="form-control input" placeholder="Last Name"
+                                    style="display: inline;width: 29%;" required>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-bold">Date of Birth</p>
+                                <div style="display: -webkit-box">
+                                    <input type="text" name="dob" id="dobId" class="form-control datepicker" id="dobId"
+                                        onchange="calculateAge(this.value);validateMaturityAge();validateEligibilityACPnCA();"
+                                        onblur="" value="" required readonly>
+                                        <img img class="ui-datepicker-trigger show_datepicker" data-datepicker="dobId"
+                                        src="../../../Assets/images/calendar.png" alt="Select date"
+                                        title="Select date"></img>
+                                </div>
+                                <div class="row errColor" id="ageErrId">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-bold">Age</p>
+                                <input type="text" name="age" value="0" class="form-control" disabled>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row no-margin">
+                                    <div class="col-sm-6 no-padding">
+
+                                        <p class="text-bold">Mobile Number*</p>
+
+                                        <div class="row no-margin">
+                                            <input type="text" name="country_code" class="form-control" value="+91"
+                                                style="padding: 0px 3px 0px 5px;width: 20%;float: left;background: #f1f1f1;text-align: center;"
+                                                readonly>
+                                            <input type="text" name="mobile" class="form-control input"
+                                                onblur="validateMobileNo(this.value)" pattern="^[0-9]{10}$"
+                                                minlength="10" maxlength="10"
+                                                onkeypress="if(this.value.length==10) return false;" required
+                                                style="width: 80%;float: left;">
+                                        </div>
+
+                                        <div id="mobileNoErrId" class="row errColor"></div>
+
+                                    </div>
+                                    <div class="col-sm-6" style="padding-right: 0px;">
+                                        <p class="text-bold">Email ID*</p>
+                                        <input type="email" name="email" class="form-control input"
+                                            onblur="validateEmailIds()"
+                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="padding-left: 0;">
+                                <p class="text-bold">Confirm Email ID*</p>
+                                <input type="email" name="confirmEmail" class="form-control input" value=""
+                                    onblur="validateEmailIds()" required>
+                                <div id="confirmEmailErrId" class="row errColor"></div>
+                            </div>
+
+                        </div>
+
+
+                        <!--                </div>-->
+                        <h4 style="padding-bottom: 10px;border-bottom: 1px solid #ccc;color: #3766b4;">Policy
+                            Details</h4>
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div style="width: 100%;display: inline-block;">
+                                    <p class="text-bold">SAMF*</p>
+                                    <select class="form-control" id="policyTermListId" name="SAMF"
+                                        onchange="updateCritiSumAssured();" required></select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div style="width: 100%;display: inline-block;">
+                                    <p class="text-bold">Plan*</p>
+                                    <select class="form-control" id="policyTermListId" name="plan"
+                                        onchange="validateMaturityAge(); validateSumAssured();" required></select>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-md-4">
+                                <div style="width: 100%;display: inline-block;">
+                                    <p class="text-bold">Policy Term*</p>
+                                    <select class="form-control" id="policyTermListId" name="policyTerm"
+                                        onchange="validateMaturityAge(); validateSumAssured();validateEligibilityACPnCA();"
+                                        required>
+                                    </select>
+                                    <span id="policyTermErrId" class="row errColor">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-3" id="divPremFreqMode">
+                                <p class="text-bold">Premium Frequency*</p>
+                                <select class="form-control" id="ddlPremiumFrequencyMode" name="premiumFrequencyMode"
+                                    onchange="validatePremAmount()" required></select>
+                            </div>
+                            <div class="col-md-4 col-sm-3">
+                                <p class="text-bold">Sum Assured*</p>
+                                <input type="number" name="premiumAmount" class="form-control input"
+                                    oninput="updateCritiSumAssured();updateAPCnCPSumAssured();validateSumAssured();validatePremAmount();"
+                                    required>
+                                <span id="sumAssuredErrId" class="row errColor">
+                                </span>
+                            </div>
+
+
+                            <div class="col-md-4 col-sm-3">
+                                <p class="text-bold">Critical Illness Sum Assured*</p>
+                                <input type="number" name="criticalPremiumAmount" class="form-control input"
+                                    oninput="validateCritiSumAssured();" required>
+                                <span id="criticleSumAssuredErrId" class="row errColor">
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <!--  -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div style="width: 100%;display: inline-block;">
+                                    <p class="text-bold">
+                                        APC and CA Option
+                                        <label class="switch">
+                                            <input type="checkbox" id="rider_switch" name="apcSwitch"
+                                                onchange="validateEligibilityACPnCA();apcSumAssuredField()">
+                                            <span class="slider round"><span class="yes">Yes</span> <span
+                                                    class="no">No</span></span>
+                                        </label>
+                                    </p>
+                                    <div class="row errColor" id="apcErrorId"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3" id="apcSumAssuredRow" style="display: none">
+                            <p class="text-bold">Sum Assured*</p>
+                            <input type="number" name="apcPremiumAmount" class="form-control input"
+                                oninput="validatePremiumAmount()" required>
+                            <span id="premiumAmtErrId" class="row errColor">
+                            </span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-warning profile-button">Back</button>
+                                <button class="btn btn-warning profile-button" value="Submit"
+                                    onclick="submitWomenAdvantageForm()">Proceed</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <!-- end cards -->
+                <!-- Main div start from here-->
+            </section>
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 col-xs-6 footer-left">
+                    <strong>
+                        <span class="sub">FAQs</span>
+                        <span style="color: #0a66b3; padding: 0px 6px 0px 6px;">Register for Updates
+                        </span>
+                    </strong>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 col-xs-6 footer-right">
+                    <strong>
+                        <span style="padding:0px 6px 0px 6px;color:#0a66b3;text-align: -webkit-right"> Follow us on:
+                        </span>
+                        <a href="#" id="foot" class="fa fa-facebook"></a>
+                        <a href="#" id="foot" class=" fa fa-twitter"></a>
+                        <a href="#" id="foot" class="fa fa-youtube"></a>
+                    </strong>
+                </div> -->
+            </div>
+        </footer>
+
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="../../../Assets/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="../../../Assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../../../Assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- AdminLTE App -->
+        <script src="../../../Assets/dist/js/adminlte.min.js"></script>
+        <script src="../../../Global/Global.js"></script>
+        <script>
+                sideNavBar.innerHTML = getPreLoginSideBar('../../../');
+            </script>
+        <script src="../../../Assets/js/common.js"></script>
+        <script src="SmartWomenAdvantage.js"></script>
+        <script src="SmartWomenAdvantageData.js" type="text/javascript"></script>
+        <script src="../../../Chatbot/chatbot-window-10092019.js"></script>
+</body>
+
+</html>

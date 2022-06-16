@@ -1,0 +1,1876 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy Access - Need Analysis</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../Assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../Assets/bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../Assets/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../Assets/dist/css/skins/_all-skins.min.css">
+
+    <!--Datepicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Common css-->
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/main.css">
+    <link rel="stylesheet" href="../Assets/css/common.css">
+    <link rel="stylesheet" href="../Assets/css/all.min.css">
+    <link rel="stylesheet" href="../Assets/css/jquery-ui.min.css">
+    <script src="../Assets/js/jquery.js"></script>
+    <script src="../Assets/js/bootstrap.min.js"></script>
+    <script src="../Assets/js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="../Chatbot/chatbot-css.css">
+    <style>
+        img {
+            width: auto;
+            height: auto;
+        }
+
+        .premium-box {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .box-one-premium {
+            padding: 0px;
+        }
+
+        form {
+            padding: 0px;
+        }
+
+        .tab-content {
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini element">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+
+            <nav class="navbar  navbar-static-top" id="navbar">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" style="display: none" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <span class="logo-head" style="display: inline-block;margin-left: 20px;padding: 5px 0px;">
+                    <b style="font-weight: 600;font-size: 20px;">Easy Access</b>
+                </span>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+
+        <style type="text/css">
+            li.active,
+            .first>a {
+                display: none;
+            }
+        </style>
+
+        <aside class="main-sidebar" id="sideNavBar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="active treeview menu-open first">
+                        <a href="#">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Home/Home.html">
+                            <img class="nav-icon" src="../Assets/images/home.png">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../MyPolicyLogin/MyPolicyLogin.html">
+                            <img class="nav-icon" src="../Assets/images/policy.png">
+                            <span>Policy Login</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../InsurancePlan/InsurancePlan.html">
+                            <img class="nav-icon" src="../Assets/images/layers.png">
+                            <span>Insurance Plans</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../PremiumCalculator/PremiumCalculator.html">
+                            <img class="nav-icon" src="../Assets/images/paper-pencil-and-calculator.png">
+                            <span>Premium Calculator</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../NeedAnalysis/NeedAnalysis.html">
+                            <img class="nav-icon" src="../Assets/images/analysis.png">
+                            <span>Need Analysis</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../BuyOnlineProducts/BuyOnlineProducts.html">
+                            <img class="nav-icon" src="../Assets/images/shopping-cart.png">
+                            <span>Buy Online Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../UsefulLinks/UsefulLinks.html">
+                            <img class="nav-icon" src="../Assets/images/link.png">
+                            <span>Useful Links</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../QueriesAndComplaints/QueriesAndComplaints.html">
+                            <img class="nav-icon" src="../Assets/images/customer-service.png">
+                            <span>Query/Complaints</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../RenewalPremium-PreLogin/RenewalPremium-PreLogin.html">
+                            <img class="nav-icon" src="../Assets/images/recycle-sign.png">
+                            <span>Pay Renewal Premium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../News/News.html">
+                            <img class="nav-icon" src="../Assets/images/newspaper.png">
+                            <span>News</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                            <a href="../Let'sChat-RIA/Let'sChat-RIA.html">
+                                <img class="nav-icon" src="../Assets/images/user-1.png">
+                                <span>Let's Chat - RIA</span>
+                            </a>
+                        </li> -->
+                    <li>
+                        <a href="../ProductExplainerVideos/ProductExplainerVideos.html">
+                            <img class="nav-icon" src="../Assets/images/pre-sales_viedo.png">
+                            <span>Product Explainer Videos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../ContactUs/ContactUs.html">
+                            <img class="nav-icon" src="../Assets/images/contact.png">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Settings/Settings.html">
+                            <img class="nav-icon" src="../Assets/images/settings.png">
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <div id="wait" style="display:none;z-index:1000;width:69px;height:89px;position:absolute;top:50%;left:50%;padding:2px;">
+                <img src='../Assets/images/demo_wait.gif' width="64" height="64" />
+                <br>
+            </div>
+
+            <!-- Content Header (Page header) -->
+            <!-- Main content -->
+            <div class="content" style="width: 100%;">
+                <!-- Main div start from here-->
+                <!-- cards -->
+                <div class="box-header pageHeaderDiv" style="padding-top: 0px;">
+                    <h3 class="box-title">Need Analysis</h3>
+                </div>
+
+                <div class="box-header">
+                    <div class="container premium-box">
+                        <div class="row">
+                            <div class="col-md-12 box-one-premium">
+                                <form class="premium_calculator" name="needAnalysis">
+                                    <!-- <h4 class="cet" style="padding-bottom: 10px;border-bottom: 1px solid #ccc;color: #3766b4;margin-top: 20px;">NEED ANALYSIS CALCULATOR</h4> -->
+
+                                    <div class="row" id="divNA">
+                                        <div class="col-md-12" style="padding:0px;">
+                                            <div class="tab" role="tabpanel">
+                                                <!-- Nav tabs -->
+                                                <div class="text-center">
+                                                    <ul id="breadcrumbs-two" role="tablist">
+                                                        <li role="presentation">
+                                                            <a id="personal" class="nth current ac z" role="tab" data-toggle="tab">MY PERSONAL DETAILS</a>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <a id="goals" class="sec nth mid" role="tab" data-toggle="tab">SET GOALS</a>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <a id="solution" class="sec nth mid" role="tab" data-toggle="tab">MY SOLUTION</a>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <a id="products" class="sec" role="tab" data-toggle="tab">PRODUCT'S LIST</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Tab panes -->
+                                                <div class="tab-content" style="padding:0px;">
+                                                    <!--section 1-->
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                                                        <!-- tab 1 start -->
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h5 class="text-bold cet">My Personal Details</h5>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="inline-block cet gender col-md-3 col-sm-6">
+                                                                    <input type="radio" name="gender" value="Male" class="hidden" id="male">
+                                                                    <label for="male" id="male_label_NA"></label>
+
+                                                                    <input type="radio" name="gender" value="Female" id="female" class="hidden">
+                                                                    <label for="female" id="female_label_NA"></label>
+                                                                </div>
+
+                                                                <div class="inline-block married col-md-4 col-sm-6 cet">
+                                                                    <input type="radio" name="martial" value="Single" class="hidden" id="single">
+                                                                    <label for="single" id="single_label"></label>
+
+                                                                    <input type="radio" name="martial" value="Married" id="married" class="hidden">
+                                                                    <label for="married" id="married_label"></label>
+                                                                </div>
+
+                                                                <div class="kids_count inline-block col-md-3 col-sm-6">
+                                                                    <p class="text-bold cet">Number of Kids</p>
+                                                                    <input type="radio" name="kids_count" value="0" class="hidden" id="zero_count" onchange="onChangeChild(this.value)">
+                                                                    <label for="zero_count" id="zero_count">0</label>
+                                                                    <input type="radio" name="kids_count" value="1" class="hidden" id="one_count" onchange="onChangeChild(this.value)">
+                                                                    <label for="one_count" id="one_count">1</label>
+                                                                    <input type="radio" name="kids_count" value="2" class="hidden" id="two_count" onchange="onChangeChild(this.value)">
+                                                                    <label for="two_count" id="two_count">2</label>
+                                                                    <input type="radio" name="kids_count" value="3" class="hidden" id="three_count" onchange="onChangeChild(this.value)">
+                                                                    <label for="three_count" id="three_count">3</label>
+                                                                    <input type="radio" name="kids_count" value="4" class="hidden" id="four_count" onchange="onChangeChild(this.value)">
+                                                                    <label for="four_count" id="four_count">4</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-6 col-xs-10">
+                                                                <div class="dob">
+                                                                    <p class="text-bold">Date of Birth</p>
+                                                                    <!-- <input type="text" class="form-control datepicker" name="dob" id="dob"
+                                                                    style="cursor: pointer;" /> -->
+
+                                                                    <input type="text" id="txtDOB" name="dob" class="form-control datepickerNA" onchange="setAge()" style="cursor: pointer;"
+                                                                        readonly>
+                                                                </div>
+
+                                                                <div class="age">
+                                                                    <p class="text-bold">Age</p>
+                                                                    <input type="text" id="txtAge" name="age" class="form-control" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-6 col-xs-10">
+                                                                <div class="group">
+                                                                    <p class="text-bold">Select Group</p>
+                                                                    <select id="selectGroup" style="width: 185px;" class="form-control">
+                                                                        <option value="SBI/Retail">SBI/Retail</option>
+                                                                        <option value="Other">Other</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h5 class="text-bold">My Financial Details</h5>
+                                                                <div class="input_container input_rupee_box clearfix row " style="padding-top: 30px;">
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <p class="text-bold text-left sp_l">Monthly Income</p>
+                                                                        <div class="input_box clearfix">
+                                                                            <span class="icon">
+                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                            </span>
+                                                                            <input type="number" id="txtMonthlyIncome" onchange="setYearlyIncome()" name="montly_income" class="amount" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- <div id="slider-range-max" class="col-md-6" style="margin-top: 20px;"></div> -->
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <p class="text-bold text-left sp_l">Yearly Income</p>
+                                                                        <div class="input_box clearfix">
+                                                                            <span class="icon">
+                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                            </span>
+                                                                            <input type="number" id="txtYearlyIncome" name="yearly_income" class="amount" readonly />
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="input_container input_rupee_box clearfix row " style="padding-top: 30px;">
+
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <p class="text-bold text-left sp_l">Monthly Expenses</p>
+                                                                        <div class="input_box clearfix">
+                                                                            <span class="icon">
+                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                            </span>
+                                                                            <input type="number" id="txtMonthlyExpenses" name="montly_expenses" class="amount" onchange="setYearlyExpense()" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- <div id="slider-range-max1" class="col-md-6" style="margin-top: 20px;"></div> -->
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <p class="text-bold text-left sp_l">Yearly Expenses</p>
+                                                                        <div class="input_box clearfix">
+                                                                            <span class="icon">
+                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                            </span>
+                                                                            <input type="number" id="txtYearlyExpenses" name="yearly_expenses" class="amount" readonly required />
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="input_container input_rupee_box clearfix row " style="padding-top: 30px;">
+
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <p class="text-bold text-left margin-top-20 sp_l">Current Life insurance Coverage</p>
+
+                                                                    </div>
+                                                                    <!-- <div id="slider-range-max1" class="col-md-6" style="margin-top: 20px;"></div> -->
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <div class="input_box clearfix">
+                                                                            <span class="icon">
+                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                            </span>
+                                                                            <input type="number" id="txtInsuranceCoverage" name="insuranceCoverage" class="amount" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input_container input_rupee_box clearfix row " style="padding-top: 30px;">
+
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <p class="text-bold text-left margin-top-20 sp_l">Outstanding Home Loan</p>
+
+                                                                    </div>
+                                                                    <!-- <div id="slider-range-max1" class="col-md-6" style="margin-top: 20px;"></div> -->
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <div class="input_box clearfix">
+                                                                            <span class="icon">
+                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                            </span>
+                                                                            <input type="number" id="txtOutstandingHL" name="outstandingHomeLoan" class="amount" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="input_container input_rupee_box clearfix row " style="padding-top: 30px;">
+
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <p class="text-bold text-left margin-top-20 sp_l">Outstanding Loan (Other)</p>
+
+                                                                    </div>
+                                                                    <!-- <div id="slider-range-max1" class="col-md-6" style="margin-top: 20px;"></div> -->
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <div class="input_box clearfix">
+                                                                            <span class="icon">
+                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                            </span>
+                                                                            <input type="number" id="txtOutstandingLoan" name="outstandingOtherLoan" class="amount" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="input_container input_rupee_box clearfix row " style="padding-top: 30px;">
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <p class="text-bold text-left margin-top-20 sp_l">Inflation Rate assumed</p>
+                                                                    </div>
+                                                                    <div class="inner_text col-md-6">
+                                                                        <div>
+                                                                            <select id="selectInflationRate" style="width: 91% !important;margin-left: 5%;" class="form-control">
+                                                                                <option value="4">4%</option>
+                                                                                <option value="5">5%</option>
+                                                                                <option value="6">6%</option>
+                                                                                <option value="7">7%</option>
+                                                                                <option value="8">8%</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="input_container input_rupee_box clearfix row " style="padding-top: 30px;">
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <p class="text-bold text-left margin-top-20 sp_l">Risk Appetite</p>
+
+                                                                    </div>
+                                                                    <div class="inner_text no-margin col-md-6">
+                                                                        <div>
+                                                                            <select id="selectRisk" style="width: 91% !important;margin-left: 5%;" class="form-control">
+                                                                                <option value="Conservative">Conservative</option>
+                                                                                <option value="Moderate">Moderate</option>
+                                                                                <option value="Aggressive">Aggressive</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <br>
+                                                        <div class="row" style="margin: 20px 0px;">
+                                                            <div class="col-md-4 text-left no-padding">
+                                                                <input type="reset" class="btn profile-button" id="btn_Back" style="width:150px !important" value="Reset Need Analysis">
+                                                                <input type="button" class="btn profile-button pull-right" id="btn_Next" onclick="goToGoals()" style="width:150px  !important"
+                                                                    value="Proceed">
+                                                            </div>
+                                                        </div>
+                                                        <!-- tab 1 end -->
+                                                    </div>
+                                                    <!--section 2-->
+                                                    <div role="tabpanel" class="tab-pane fade in" id="Section2">
+                                                        <!-- Nav tabs -->
+                                                        <div class="goals_navbar">
+                                                            <ul class="nav nav-tabs row" role="tablist">
+                                                                <li role="presentation" class="col-md-2 col-md-offset-3 col-sm-2 col-sm-offset-3 col-xs-4">
+                                                                    <a href="#Goals1" id="goals1_tab" aria-controls="home" role="tab" data-toggle="tab">
+                                                                        <img src="../Assets/images/retire-selected.png">
+                                                                        <br>
+                                                                        <label>Retirement</label>
+                                                                        <br>
+                                                                    </a>
+                                                                </li>
+                                                                <li role="presentation" class="col-md-2 col-sm-2 col-xs-4">
+                                                                    <a href="#Goals2" aria-controls="profile" id="goals2_tab" role="tab" data-toggle="tab">
+                                                                        <img src="../Assets/images/child-non-selected.png">
+                                                                        <br>
+                                                                        <label>Child Future</label>
+                                                                        <br>
+                                                                    </a>
+                                                                </li>
+                                                                <li role="presentation" class="col-md-2 col-sm-2 col-xs-4">
+                                                                    <a href="#Goals3" aria-controls="messages" id="goals3_tab" role="tab" data-toggle="tab">
+                                                                        <img src="../Assets/images/wealth-non-selected.png">
+                                                                        <br>
+                                                                        <label>Wealth</label>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Tab panes -->
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane fade in active" id="Goals1">
+                                                                <h4>Retirement</h4>
+
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <p class="myheader">Current Corpus Saved for retirement (PPF,PF, Retirement
+                                                                            plans)
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="input_box clearfix">
+                                                                            <span class="icon">
+                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                            </span>
+                                                                            <input type="number" id="txtCurrentCorpus" name="currentCorpus" class="amount" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <p class="myheader">Expected Age of Retirement</p>
+                                                                    </div>
+                                                                    <div class="col-md-6 col-sm-6 no-padding">
+                                                                        <div class="add_sub_box retire_age_box col-md-6 counter">
+                                                                            <span class="icon-left">
+                                                                                <i class="fa fa-minus-circle"></i>
+                                                                            </span>
+                                                                            <input type="text" class="form-control" id="txtRetirementAge" value="58" maxlength="3">
+                                                                            <span class="icon-right">
+                                                                                <i class="fa fa-plus-circle"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <p class="myheader">Post retirement lifestyle will be</p>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="row retire_lifestyle_box freq_mode_box">
+                                                                            <div class="col-md-12 freq_mode_box">
+                                                                                <div class="col-md-3" style="padding: 0px;">
+                                                                                    <label class="btn" for="basic" style="width: 100%;">Basic</label>
+                                                                                </div>
+                                                                                <div class="col-md-6" style="padding: 0px;">
+                                                                                    <label class="btn" for="comfortable" style="width: 100%;">Comfortable</label>
+                                                                                </div>
+                                                                                <div class="col-md-3" style="padding: 0px;">
+                                                                                    <label class="btn" for="luxury" style="width: 100%;">Luxury</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="hidden">
+                                                                                <input type="radio" name="rbPostRetirement" value="Basic" id="basic">
+                                                                                <input type="radio" name="rbPostRetirement" value="Comfortable" id="comfortable">
+                                                                                <input type="radio" name="rbPostRetirement" value="Luxury" id="luxury">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Child Future Start -->
+                                                            <div role="tabpanel" class="tab-pane fade in" id="Goals2">
+                                                                <hr>
+                                                                <div>
+                                                                    <h4>
+                                                                        <label id="lblChildMessage" style="color:green;"></label>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="divChildren" style="display:none;">
+                                                                    <div id="tabBodyChild" class="tab">
+                                                                        <input type="button" class="tablinks" id="tabChild1" value="Child 1" onclick="openTab(event, 'Child 1')">
+                                                                        <input type="button" class="tablinks" id="tabChild2" value="Child 2" onclick="openTab(event, 'Child 2')">
+                                                                        <input type="button" class="tablinks" id="tabChild3" value="Child 3" onclick="openTab(event, 'Child 3')">
+                                                                        <input type="button" class="tablinks" id="tabChild4" value="Child 4" onclick="openTab(event, 'Child 4')">
+                                                                    </div>
+                                                                    <!--Child 1 Content-->
+                                                                    <div id="Child 1" class="tabcontent" style="width:100%;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <h4>Child 1 Future</h4>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                                                                            <input type="text" id="txtChild1Name" class="child-future-input form-control" name="child1Name" placeholder="Child name">
+                                                                                        </div>
+                                                                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                                                                            <input type="number" id="txtChild1Age" class="child-future-input form-control" name="child1Age" placeholder="Age">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- education start -->
+                                                                        <div class="row margin-top-20 education_box">
+                                                                            <!-- education -->
+                                                                            <div class="col-md-6 col-sm-6 education margin-top-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <label>Education</label>
+                                                                                        <p>Age at which education fund is required</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="add_sub_box education_age col-md-6 counter">
+                                                                                        <span class="icon-left">
+                                                                                            <i class="fa fa-minus-circle"></i>
+                                                                                        </span>
+                                                                                        <input type="number" id="txtChild1AgeEdu" class="form-control" value="18">
+                                                                                        <span class="icon-right">
+                                                                                            <i class="fa fa-plus-circle"></i>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12">
+                                                                                                <p class="myheader">Corpus already saved for
+                                                                                                    education
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" id="txtChild1CorpusEdu" name="child1CorpusEdu" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" style="margin-bottom: 8%;">
+                                                                                                <p class="myheader">Current Cost for education</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" id="txtChild1CurrentEdu" name="child1CurrentEdu" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- Marriage -->
+                                                                            <div class="col-md-6 col-sm-6 margin-top-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <label>Marriage</label>
+                                                                                        <p>Age at which marriage fund is required</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="add_sub_box marriage_age col-md-6 counter">
+                                                                                        <span class="icon-left">
+                                                                                            <i class="fa fa-minus-circle"></i>
+                                                                                        </span>
+                                                                                        <input type="number" id="txtChild1AgeMarriage" class="form-control" value="25">
+                                                                                        <span class="icon-right">
+                                                                                            <i class="fa fa-plus-circle"></i>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12">
+                                                                                                <p class="myheader">Corpus already saved for
+                                                                                                    marriage
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" name="child1CorpusMarriage" id="txtChild1CorpusMarriage" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" style="margin-bottom: 8%;">
+                                                                                                <p class="myheader">Current Cost for marriage</p>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" name="child1CurrentMarriage" id="txtChild1CurrentMarriage" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!--Child 2 Content-->
+                                                                    <div id="Child 2" class="tabcontent" style="width:100%;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <h4>Child 2 Future</h4>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                                                                            <input type="text" id="txtChild2Name" class="child-future-input form-control" name="child2Name" placeholder="Child name">
+                                                                                        </div>
+                                                                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                                                                            <input type="number" id="txtChild2Age" class="child-future-input form-control" name="child2Age" placeholder="Age">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- education start -->
+                                                                        <div class="row margin-top-20 education_box">
+                                                                            <!-- education -->
+                                                                            <div class="col-md-6 col-sm-6 education margin-top-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <label>Education</label>
+                                                                                        <p>Age at which education fund is required</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="add_sub_box education_age col-md-6 counter">
+                                                                                        <span class="icon-left">
+                                                                                            <i class="fa fa-minus-circle"></i>
+                                                                                        </span>
+                                                                                        <input type="number" id="txtChild2AgeEdu" class="form-control" value="18">
+                                                                                        <span class="icon-right">
+                                                                                            <i class="fa fa-plus-circle"></i>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12">
+                                                                                                <p class="myheader">Corpus already saved for
+                                                                                                    education
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" id="txtChild2CorpusEdu" name="child2CorpusEdu" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" style="margin-bottom: 8%;">
+                                                                                                <p class="myheader">Current Cost for education</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" id="txtChild2CurrentEdu" name="child2CurrentEdu" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- Marriage -->
+                                                                            <div class="col-md-6 col-sm-6 margin-top-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <label>Marriage</label>
+                                                                                        <p>Age at which marriage fund is required</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="add_sub_box marriage_age col-md-6 counter">
+                                                                                        <span class="icon-left">
+                                                                                            <i class="fa fa-minus-circle"></i>
+                                                                                        </span>
+                                                                                        <input type="number" id="txtChild2AgeMarriage" class="form-control" value="25">
+                                                                                        <span class="icon-right">
+                                                                                            <i class="fa fa-plus-circle"></i>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12">
+                                                                                                <p class="myheader">Corpus already saved for
+                                                                                                    marriage
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" name="child2CorpusMarriage" id="txtChild2CorpusMarriage" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" style="margin-bottom: 8%;">
+                                                                                                <p class="myheader">Current Cost for marriage</p>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" name="child2CurrentMarriage" id="txtChild2CurrentMarriage" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!--Child 3 Content-->
+                                                                    <div id="Child 3" class="tabcontent" style="width:100%;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <h4>Child 3 Future</h4>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                                                                            <input type="text" id="txtChild3Name" class="child-future-input form-control" name="child3Name" placeholder="Child name">
+                                                                                        </div>
+                                                                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                                                                            <input type="number" id="txtChild3Age" class="child-future-input form-control" name="child3Age" placeholder="Age">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- education start -->
+                                                                        <div class="row margin-top-20 education_box">
+                                                                            <!-- education -->
+                                                                            <div class="col-md-6 col-sm-6 education margin-top-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <label>Education</label>
+                                                                                        <p>Age at which education fund is required</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="add_sub_box education_age col-md-6 counter">
+                                                                                        <span class="icon-left">
+                                                                                            <i class="fa fa-minus-circle"></i>
+                                                                                        </span>
+                                                                                        <input type="number" id="txtChild3AgeEdu" class="form-control" value="18">
+                                                                                        <span class="icon-right">
+                                                                                            <i class="fa fa-plus-circle"></i>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12">
+                                                                                                <p class="myheader">Corpus already saved for
+                                                                                                    education
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" id="txtChild3CorpusEdu" name="child3CorpusEdu" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" style="margin-bottom: 8%;">
+                                                                                                <p class="myheader">Current Cost for education</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" id="txtChild3CurrentEdu" name="child3CurrentEdu" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- Marriage -->
+                                                                            <div class="col-md-6 col-sm-6 margin-top-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <label>Marriage</label>
+                                                                                        <p>Age at which marriage fund is required</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="add_sub_box marriage_age col-md-6 counter">
+                                                                                        <span class="icon-left">
+                                                                                            <i class="fa fa-minus-circle"></i>
+                                                                                        </span>
+                                                                                        <input type="number" id="txtChild3AgeMarriage" class="form-control" value="25">
+                                                                                        <span class="icon-right">
+                                                                                            <i class="fa fa-plus-circle"></i>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12">
+                                                                                                <p class="myheader">Corpus already saved for
+                                                                                                    marriage
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" name="child3CorpusMarriage" id="txtChild3CorpusMarriage" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" style="margin-bottom: 8%;">
+                                                                                                <p class="myheader">Current Cost for marriage</p>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" name="child3CurrentMarriage" id="txtChild3CurrentMarriage" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!--Child 4 Content-->
+                                                                    <div id="Child 4" class="tabcontent" style="width:100%;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <h4>Child 4 Future</h4>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                                                                            <input type="text" id="txtChild4Name" class="child-future-input form-control" name="child4Name" placeholder="Child name">
+                                                                                        </div>
+                                                                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                                                                            <input type="number" id="txtChild4Age" class="child-future-input form-control" name="child4Age" placeholder="Age">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- education start -->
+                                                                        <div class="row margin-top-20 education_box">
+                                                                            <!-- education -->
+                                                                            <div class="col-md-6 col-sm-6 education margin-top-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <label>Education</label>
+                                                                                        <p>Age at which education fund is required</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="add_sub_box education_age col-md-6 counter">
+                                                                                        <span class="icon-left">
+                                                                                            <i class="fa fa-minus-circle"></i>
+                                                                                        </span>
+                                                                                        <input type="number" id="txtChild4AgeEdu" class="form-control" value="18">
+                                                                                        <span class="icon-right">
+                                                                                            <i class="fa fa-plus-circle"></i>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12">
+                                                                                                <p class="myheader">Corpus already saved for
+                                                                                                    education
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" id="txtChild4CorpusEdu" name="child4CorpusEdu" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" style="margin-bottom: 8%;">
+                                                                                                <p class="myheader">Current Cost for education</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" id="txtChild4CurrentEdu" name="child4CurrentEdu" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- Marriage -->
+                                                                            <div class="col-md-6 col-sm-6 margin-top-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <label>Marriage</label>
+                                                                                        <p>Age at which marriage fund is required</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="add_sub_box marriage_age col-md-6 counter">
+                                                                                        <span class="icon-left">
+                                                                                            <i class="fa fa-minus-circle"></i>
+                                                                                        </span>
+                                                                                        <input type="number" id="txtChild4AgeMarriage" class="form-control" value="25">
+                                                                                        <span class="icon-right">
+                                                                                            <i class="fa fa-plus-circle"></i>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12">
+                                                                                                <p class="myheader">Corpus already saved for
+                                                                                                    marriage
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" name="child4CorpusMarriage" id="txtChild4CorpusMarriage" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" style="margin-bottom: 8%;">
+                                                                                                <p class="myheader">Current Cost for marriage</p>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12 col-sm-12" style="">
+                                                                                                <div class="input_box clearfix">
+                                                                                                    <span class="icon">
+                                                                                                        <i class="fas fa-rupee-sign"></i>
+                                                                                                    </span>
+                                                                                                    <input type="number" name="child4CurrentMarriage" id="txtChild4CurrentMarriage" class="amount" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--Child Future End-->
+                                                            <!--Wealth Start-->
+                                                            <div role="tabpanel" class="tab-pane fade in" id="Goals3">
+                                                                <!-- Wealth Start -->
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <h4>Wealth</h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row margin-top-20 education_box">
+                                                                    <!-- education -->
+                                                                    <div class="col-md-6 col-sm-6 education margin-top-20">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <label>Buy Home</label>
+                                                                                <p>No of years to buy home</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="add_sub_box buy_home col-md-6 counter">
+                                                                                <input type="number" class="form-control text-center" id="txtYearsToBuyHome" onchange="showCorpusHomeLoan()" value="0">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" id="divCorpusHome" style="display:none;">
+                                                                            <div class="col-md-6">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <p class="myheader">Corpus already saved</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 col-sm-12" style="">
+                                                                                        <div class="input_box clearfix">
+                                                                                            <span class="icon">
+                                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                                            </span>
+                                                                                            <input type="number" id="txtCorpusHome" name="corpusHome" class="amount" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6" id="divCurrentCostHome" style="display:none;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <p class="myheader">Current Cost</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 col-sm-12" style="">
+                                                                                        <div class="input_box clearfix">
+                                                                                            <span class="icon">
+                                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                                            </span>
+                                                                                            <input type="number" id="txtCurrentCostHome" name="currentCost" class="amount" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 col-sm-6 margin-top-20">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <label>Other Goal</label>
+                                                                                <p>No of years to realise other goals</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="add_sub_box realise_goals col-md-6 counter">
+                                                                                <input type="number" id="txtYearsToOtherGoals" class="form-control" value="0" onchange="showCorpusOtherLoan()">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" id="divCorpusOther" style="display:none;">
+                                                                            <div class="col-md-6">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <p class="myheader">Corpus already saved</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 col-sm-12" style="">
+                                                                                        <div class="input_box clearfix">
+                                                                                            <span class="icon">
+                                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                                            </span>
+                                                                                            <input type="number" id="txtCorpusOther" name="corpusOther" class="amount" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6" id="divCurrentCostOther" style="display:none;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <p class="myheader">Current Cost</p>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 col-sm-12" style="">
+                                                                                        <div class="input_box clearfix">
+                                                                                            <span class="icon">
+                                                                                                <i class="fas fa-rupee-sign"></i>
+                                                                                            </span>
+                                                                                            <input type="number" id="txtCurrentCostOther" name="currentCostOthers" class="amount" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- education end -->
+                                                                <!--<hr>
+                                                <div class="row" style="margin: 20px 0px;">
+                                                    <div class="col-md-12 text-left no-padding">
+                                                        <button class="btn profile-button">Back</button>
+                                                        <button class="btn profile-button pull-right">Proceed</button>
+                                                    </div>
+                                                </div>-->
+                                                                <!-- Child Future End -->
+                                                            </div>
+                                                            <!--Wealth End-->
+                                                            <hr />
+                                                            <div class="row" style="margin: 20px 0px;">
+                                                                <div class="col-md-4 text-left no-padding">
+                                                                    <input type="button" class="btn profile-button" style="width:150px  !important" value="Back" onclick="backToMyDetails()">
+                                                                    <input type="button" class="btn profile-button pull-right" style="width:150px !important;" onclick="goToSolution()" value="Proceed">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- section 3 -->
+                                                    <div role="tabpanel" class="tab-pane fade in" id="Section3">
+                                                        <!-- Protection -->
+                                                        <div class="row bttm">
+                                                            <h4>Protection</h4>
+                                                            <div class="col-md-6">
+                                                                <div class="row">
+                                                                    <p class="db_ali">Target life insurance coverage Rs.
+                                                                        <small id="lblTargetProtectionCvrg"></small>
+                                                                    </p>
+                                                                    <div class="col-md-6" style="padding-top: 30px;">
+                                                                        <p class="db_in">Gap to target amount Rs.
+                                                                            <small id="lblGapProtectionCvrg"></small>
+                                                                        </p>
+                                                                        <p class="db_in2">Current corpus Rs.
+                                                                            <small id="lblCurrentProtectionCvrg"></small>
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+                                                                        <div id="protectionCharts" style="min-width: 100px; height: 300px; margin: 0 auto"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <h4>Protection Plans</h4>
+                                                                <select class="form-control d_w" name="plan" id="selectProtectionPlan" onchange="onChangeProtectionPlan()">
+                                                                    <option value="Traditional Plans">Traditional Plans</option>
+                                                                    <option value="Unit Linked Plans">Unit Linked Plans</option>
+                                                                </select>
+                                                                <div id="divProtectionTrad">
+                                                                </div>
+                                                                <div id="divProtectionUnit" style="display:none;">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Retirement Planning -->
+                                                        <p></p>
+                                                        <div class="row bttm">
+                                                            <h4>Retirement Planning</h4>
+                                                            <div class="col-md-6">
+                                                                <p align="center" class="db_ali2">Target amount Rs.
+                                                                    <small id="lblRetirementTargetAmount"></small>
+                                                                </p>
+                                                                <p>A monthly investment of Rs.
+                                                                    <small id="lblRetirementInv"></small> for
+                                                                    <small id="lblRetirementYears"></small> years will bridge the gap for Retirement savings</p>
+                                                                <div class="row">
+                                                                    <div class="col-md-6" style="padding-top: 30px; ">
+                                                                        <p class="db_in">Gap to target amount Rs.
+                                                                            <small id="lblGapRetirementAmount"></small>
+                                                                        </p>
+                                                                        <p class="db_in2">Current corpus Rs.
+                                                                            <small id="lblCurrentRetirementAmount"></small>
+                                                                        </p>
+                                                                    </div>
+                                                                    <br />
+                                                                    <div class="col-md-6">
+                                                                        <div id="retirementCharts" style="min-width: 100px; height: 300px; margin: 0 auto"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h4>Retirement Plans</h4>
+                                                                <select class="form-control d_w" name="plan" id="selectRetirementPlan" onchange="onChangeRetirementPlan()">
+                                                                    <option value="Traditional Plans">Traditional Plans</option>
+                                                                    <option value="Unit Linked Plans">Unit Linked Plans</option>
+                                                                </select>
+                                                                <div id="divRetirementTrad">
+                                                                </div>
+                                                                <div id="divRetirementUnit" style="display:none;">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Child Future Planning -->
+                                                        <div class="row bttm">
+                                                            <h4>Child Future Planning</h4>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <p align="center">
+                                                                        <small id="lblChild1EduName"></small>
+                                                                    </p>
+                                                                    <p class="db_ali">Target amount Rs.
+                                                                        <small id="lblChildEdu1TargetAmount"></small>
+                                                                    </p>
+                                                                    <p>You will need to save Rs.
+                                                                        <small id="lblSaveChild1EduAmount"></small> per month for the coming
+                                                                        <small id="lblSaveChild1EduYears"></small> years</p>
+                                                                    <div class="col-md-6" style="padding-top: 30px;">
+                                                                        <p class="db_in">Gap to target amount Rs.
+                                                                            <small id="lblChild1EduGapAmount"></small>
+                                                                        </p>
+                                                                        <p class="db_in2">Current corpus Rs.
+                                                                            <small id="lblChild1EduCurrentCorpus"></small>
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <div id="child1EduCharts" style="min-width: 100px; height: 300px; margin: 0 auto"></div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p align="center">
+                                                                        <small id="lblChild1MarriageName"></small>
+                                                                    </p>
+                                                                    <p class="db_ali">Target amount Rs.
+                                                                        <small id="lblChild1MarriageTargetAmount"></small>
+                                                                    </p>
+                                                                    <p>You will need to save Rs.
+                                                                        <small id="lblSaveChild1MarriageAmount"></small> per month for the coming
+                                                                        <small id="lblSaveChild1MarriageYears"></small> years</p>
+                                                                    <div class="col-md-6" style="padding-top: 30px;">
+                                                                        <p class="db_in">Gap to target amount Rs.
+                                                                            <small id="lblChild1MarriageGapAmount"></small>
+                                                                        </p>
+                                                                        <p class="db_in2">Current corpus Rs.
+                                                                            <small id="lblChild1MarriageCurrentCorpus"></small>
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <div id="child1MarriageCharts" style="min-width: 100px; height: 300px; margin: 0 auto"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row" id="divChild2" style="display:none">
+                                                                <div class="col-md-6">
+                                                                    <p align="center">
+                                                                        <small id="lblChild2EduName"></small>
+                                                                    </p>
+                                                                    <p class="db_ali">Target amount Rs.
+                                                                        <small id="lblChildEdu2TargetAmount"></small>
+                                                                    </p>
+                                                                    <p>You will need to save Rs.
+                                                                        <small id="lblSaveChild2EduAmount"></small> per month for the coming
+                                                                        <small id="lblSaveChild2EduYears"></small> years</p>
+                                                                    <div class="col-md-6" style="padding-top: 30px;">
+                                                                        <p class="db_in">Gap to target amount Rs.
+                                                                            <small id="lblChild2EduGapAmount"></small>
+                                                                        </p>
+                                                                        <p class="db_in2">Current corpus Rs.
+                                                                            <small id="lblChild2EduCurrentCorpus"></small>
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <div id="child2EduCharts" style="min-width: 100px; height: 300px; margin: 0 auto"></div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p align="center">
+                                                                        <small id="lblChild2MarriageName"></small>
+                                                                    </p>
+                                                                    <p class="db_ali">Target amount Rs.
+                                                                        <small id="lblChild2MarriageTargetAmount"></small>
+                                                                    </p>
+                                                                    <p>You will need to save Rs.
+                                                                        <small id="lblSaveChild2MarriageAmount"></small> per month for the coming
+                                                                        <small id="lblSaveChild2MarriageYears"></small> years</p>
+                                                                    <div class="col-md-6" style="padding-top: 30px;">
+                                                                        <p class="db_in">Gap to target amount Rs.
+                                                                            <small id="lblChild2MarriageGapAmount"></small>
+                                                                        </p>
+                                                                        <p class="db_in2">Current corpus Rs.
+                                                                            <small id="lblChild2MarriageCurrentCorpus"></small>
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <div id="child2MarriageCharts" style="min-width: 100px; height: 300px; margin: 0 auto"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row" id="divChild3" style="display:none">
+                                                                <div class="col-md-6">
+                                                                    <p align="center">
+                                                                        <small id="lblChild3EduName"></small>
+                                                                    </p>
+                                                                    <p class="db_ali">Target amount Rs.
+                                                                        <small id="lblChildEdu3TargetAmount"></small>
+                                                                    </p>
+                                                                    <p>You will need to save Rs.
+                                                                        <small id="lblSaveChild3EduAmount"></small> per month for the coming
+                                                                        <small id="lblSaveChild3EduYears"></small> years</p>
+                                                                    <div class="col-md-6" style="padding-top: 30px;">
+                                                                        <p class="db_in">Gap to target amount Rs.
+                                                                            <small id="lblChild3EduGapAmount"></small>
+                                                                        </p>
+                                                                        <p class="db_in2">Current corpus Rs.
+                                                                            <small id="lblChild3EduCurrentCorpus"></small>
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <div id="child3EduCharts" style="min-width: 100px; height: 300px; margin: 0 auto"></div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p align="center">
+                                                                        <small id="lblChild3MarriageName"></small>
+                                                                    </p>
+                                                                    <p class="db_ali">Target amount Rs.
+                                                                        <small id="lblChild3MarriageTargetAmount"></small>
+                                                                    </p>
+                                                                    <p>You will need to save Rs.
+                                                                        <small id="lblSaveChild3MarriageAmount"></small> per month for the coming
+                                                                        <small id="lblSaveChild3MarriageYears"></small> years</p>
+                                                                    <div class="col-md-6" style="padding-top: 30px;">
+                                                                        <p class="db_in">Gap to target amount Rs.
+                                                                            <small id="lblChild3MarriageGapAmount"></small>
+                                                                        </p>
+                                                                        <p class="db_in2">Current corpus Rs.
+                                                                            <small id="lblChild3MarriageCurrentCorpus"></small>
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <div id="child3MarriageCharts" style="min-width: 100px; height: 300px; margin: 0 auto"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row" id="divChild4" style="display:none">
+                                                                <div class="col-md-6">
+                                                                    <p align="center">
+                                                                        <small id="lblChild4EduName"></small>
+                                                                    </p>
+                                                                    <p class="db_ali">Target amount Rs.
+                                                                        <small id="lblChildEdu4TargetAmount"></small>
+                                                                    </p>
+                                                                    <p>You will need to save Rs.
+                                                                        <small id="lblSaveChild4EduAmount"></small> per month for the coming
+                                                                        <small id="lblSaveChild4EduYears"></small> years</p>
+                                                                    <div class="col-md-6" style="padding-top: 30px;">
+                                                                        <p class="db_in">Gap to target amount Rs.
+                                                                            <small id="lblChild4EduGapAmount"></small>
+                                                                        </p>
+                                                                        <p class="db_in2">Current corpus Rs.
+                                                                            <small id="lblChild4EduCurrentCorpus"></small>
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <div id="child4EduCharts" style="min-width: 100px; height: 300px; margin: 0 auto"></div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p align="center">
+                                                                        <small id="lblChild4MarriageName"></small>
+                                                                    </p>
+                                                                    <p class="db_ali">Target amount Rs.
+                                                                        <small id="lblChild4MarriageTargetAmount"></small>
+                                                                    </p>
+                                                                    <p>You will need to save Rs.
+                                                                        <small id="lblSaveChild4MarriageAmount"></small> per month for the coming
+                                                                        <small id="lblSaveChild4MarriageYears"></small> years</p>
+                                                                    <div class="col-md-6" style="padding-top: 30px;">
+                                                                        <p class="db_in">Gap to target amount Rs.
+                                                                            <small id="lblChild4MarriageGapAmount"></small>
+                                                                        </p>
+                                                                        <p class="db_in2">Current corpus Rs.
+                                                                            <small id="lblChild4MarriageCurrentCorpus"></small>
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <div id="child4MarriageCharts" style="min-width: 100px; height: 300px; margin: 0 auto"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <h4>Child Future Plans</h4>
+                                                                    <select class="form-control d_w" name="plan" id="selectChildFuturePlan" onchange="onChangeChildFuturePlan()">
+                                                                        <option value="Traditional Plans">Traditional Plans</option>
+                                                                        <option value="Unit Linked Plans">Unit Linked Plans</option>
+                                                                    </select>
+                                                                    <div id="divChildFutureTrad">
+                                                                    </div>
+                                                                    <div id="divChildFutureUnit" style="display:none;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Insurance with Savings -->
+                                                        <p></p>
+                                                        <div class="row bttm">
+                                                            <h4>Insurance with Savings</h4>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <p align="center">Buy a Home</p>
+                                                                    <p class="db_ali" align="center">Target amount Rs.
+                                                                        <small id="lblTargetHomeAmount"></small>
+                                                                    </p>
+                                                                    <p align="center">You will need to save Rs.
+                                                                        <small id="lblSaveHomeAmount"></small> per month for the coming
+                                                                        <small id="lblSaveHomeYears"></small> years</p>
+                                                                    <div id="homeCharts" style="width: 40%; height: 300px; margin: 0 auto;float: right;"></div>
+                                                                    <p class="db_in" style="padding-top: 50px; ">Gap to target amount Rs.
+                                                                        <small id="lblGapHomeAmount"></small>
+                                                                    </p>
+                                                                    <p class="db_in2" style="padding-top: 50px;">Current corpus Rs.
+                                                                        <small id="lblCurrentCorpusHome"></small>
+                                                                    </p>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p align="center">Other Goal</p>
+                                                                    <p class="db_ali" align="center">Target amount Rs.
+                                                                        <small id="lblTargetOtherAmount"></small>
+                                                                    </p>
+                                                                    <p align="center">You will need to save Rs.
+                                                                        <small id="lblSaveOtherAmount"></small> per month for the coming
+                                                                        <small id="lblSaveOtherYears"></small> years</p>
+                                                                    <div id="otherCharts" style="width: 40%; height: 300px; margin: 0 auto;float: right;"></div>
+                                                                    <p class="db_in" style="padding-top: 50px; ">Gap to target amount Rs.
+                                                                        <small id="lblGapOtherAmount"></small>
+                                                                    </p>
+                                                                    <p class="db_in2" style="padding-top: 50px;">Current corpus Rs.
+                                                                        <small id="lblCurrentCorpusOther"></small>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <h4>Insurance with Savings Plans</h4>
+                                                                    <select class="form-control d_w" name="plan" id="selectInsurancePlan" onchange="onChangeInsurancePlan()">
+                                                                        <option value="Traditional Plans">Traditional Plans</option>
+                                                                        <option value="Unit Linked Plans">Unit Linked Plans</option>
+                                                                    </select>
+                                                                    <div id="divInsuranceTrad">
+                                                                    </div>
+                                                                    <div id="divInsuranceUnit" style="display:none;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row" style="margin: 20px 0px;">
+                                                            <div class="col-md-4 text-left no-padding">
+                                                                <input type="button" class="btn profile-button" id="btnBackToGoals" onclick="backToGoals()" style="width:150px  !important"
+                                                                    value="Back">
+                                                                <input type="button" class="btn profile-button pull-right" id="btnNextProducts" onclick="goToProductsList()" style="width:150px  !important"
+                                                                    value="Proceed">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--section 4-->
+                                                    <div role="tabpanel" class="tab-pane fade in" id="Section4">
+                                                        <div class="row bttm">
+                                                            <div class="row" style="height:fit-content">
+                                                                <div class="col-md-12">
+                                                                    <p>I have gone through the financial analysis carefully
+                                                                        and have chosen the following products from those
+                                                                        recommended to me, based on my financial circumstances
+                                                                        and priorities. The products have been explained
+                                                                        to me in detail.</p>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="row " style="height:fit-content">
+                                                                <div class="col-md-4 col-xs-10" id="divSuggestedProducts">
+
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <br />
+                                                            <div class="row " style="height:fit-content">
+                                                                <div class="col-md-12">
+                                                                    <p>I would also like to purchase the following product/s
+                                                                        which has not been recommended to me. I have gone
+                                                                        through the product literature and fully understand
+                                                                        the product/s.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row " style="height:fit-content">
+                                                                <div class="col-md-4 col-xs-10" id="divNonSuggestedProducts">
+
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <br />
+                                                            <div class="row " style="height:fit-content">
+                                                                <div class="col-md-12">
+                                                                    <p>I have voluntarily chosen products based on my insurance
+                                                                        needs and financial objectives.</p>
+                                                                </div>
+                                                            </div>
+                                                            <hr />
+                                                            <div class="row " style="height:fit-content">
+                                                                <div class="col-md-12">
+
+                                                                </div>
+                                                                <p>Date:
+                                                                    <small style="font-weight: bolder;" id="lblDate"></small>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--    </div>-->
+
+
+
+
+
+
+
+                    <!-- end cards -->
+
+
+                    <!-- Main div start from here-->
+
+                </div>
+            </div>
+            <!-- /.content-wrapper -->
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6 footer-left">
+                        <strong>
+                            <span class="sub">FAQs</span>
+                            <span style="color: #0a66b3; padding: 0px 6px 0px 6px;">Register for Updates
+                            </span>
+                        </strong>
+                    </div>
+                    <!-- <div class="col-md-6 col-sm-6 col-xs-6 footer-right">
+                        <strong>
+                            <span style="padding:0px 6px 0px 6px;color:#0a66b3;text-align: -webkit-right"> Follow us on:
+                            </span>
+                            <a href="#" id="foot" class="fa fa-facebook"></a>
+                            <a href="#" id="foot" class=" fa fa-twitter"></a>
+                            <a href="#" id="foot" class="fa fa-youtube"></a>
+                        </strong>
+                    </div> -->
+                </div>
+            </footer>
+
+            <!-- ./wrapper -->
+
+
+
+
+            <!-- jQuery 3 -->
+            <script src="../Assets/bower_components/jquery/dist/jquery.min.js"></script>
+            <!-- jQuery UI 1.11.4 -->
+            <script src="../Assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+            <!-- Bootstrap 3.3.7 -->
+            <script src="../Assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+            <!-- AdminLTE App -->
+            <script src="../Assets/dist/js/adminlte.min.js"></script>
+
+            <!-- sticky navbar -->
+            <script src="../global/global.js" type="text/javascript"></script>
+
+            <script src="../Assets/js/common.js"></script>
+
+            <!--Datepicker -->
+            <script>
+                sideNavBar.innerHTML = getPreLoginSideBar('../');
+                $(document).ready(function () {
+                    $(".datepicker").datepicker();
+                    $('.date-icon').click(function () {
+                        $(".datepicker").focus();
+                    });
+                });
+            </script>
+            <!--Datepicker -->
+
+            <script>
+                $(document).ready(function () {
+                    $(".splash").fadeIn(2000);
+                    $(".splash-logo").fadeIn(2500, function () {
+                        $(".splash-logo").addClass('bounce animated').one(
+                            'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+                        );
+                    });
+                    setTimeout(function () {
+                        // $(".splash").fadeOut(3000);
+                    }, 4000);
+
+                    $(".freq_mode_box .btn").click(function () {
+                        $(".freq_mode_box .btn").removeClass("btn-success");
+                        $(this).addClass("btn-success");
+                    });
+
+                    $(".retire_lifestyle_box label").click(function () {
+                        $(".retire_lifestyle_box label").removeClass("btn-success");
+                        $(this).addClass("btn-success");
+                    });
+
+                    $("#goals1_tab").click(function () {
+                        $("#goals1_tab img").attr("src", "../Assets/images/retire-selected.png");
+                        $("#goals2_tab img").attr("src", "../Assets/images/child-non-selected.png");
+                        $("#goals3_tab img").attr("src", "../Assets/images/wealth-non-selected.png");
+                    });
+
+                    $("#goals2_tab").click(function () {
+                        $("#goals1_tab img").attr("src", "../Assets/images/retire-non-selected.png");
+                        $("#goals2_tab img").attr("src", "../Assets/images/child-selected.png");
+                        $("#goals3_tab img").attr("src", "../Assets/images/wealth-non-selected.png");
+                    });
+
+                    $("#goals3_tab").click(function () {
+                        $("#goals1_tab img").attr("src", "../Assets/images/retire-non-selected.png");
+                        $("#goals2_tab img").attr("src", "../Assets/images/child-non-selected.png");
+                        $("#goals3_tab img").attr("src", "../Assets/images/wealth-selected.png");
+                    });
+
+                    $(".kids_count label").click(function () {
+                        $(".kids_count label").css({
+                            "background-color": "#dddddd"
+                        });
+                        $(this).css({
+                            "background-color": "#2a5192"
+                        });
+
+                    });
+
+                    $(".counter .icon-left").on("click", function () {
+                        var a = $(this).siblings("input").val();
+                        a = parseInt(a) - 1;
+                        $(this).siblings("input").val(a);
+                    });
+
+                    $(".counter .icon-right").on("click", function () {
+                        var a = $(this).siblings("input").val();
+                        a = parseInt(a) + 1;
+                        $(this).siblings("input").val(a);
+                    });
+                });
+            </script>
+
+            <script>
+                $("#male_label_NA").click(function () {
+                    $("#male_label_NA").css({
+                        "background": "url('../Assets/images/male_active.png')",
+                        "width": "100px",
+                        "height": "100px",
+                        "background-size": "cover"
+                    });
+                    $("#female_label_NA").css({
+                        "background": "url('../Assets/images/female.png')",
+                        "width": "100px",
+                        "height": "100px",
+                        "background-size": "cover"
+                    });
+                    $("#transgender_label").css({
+                        "background": "url('../Assets/images/transgender.png')",
+                        "width": "100px",
+                        "height": "100px",
+                        "background-size": "cover"
+                    });
+                });
+                $("#female_label_NA").click(function () {
+                    $("#female_label_NA").css({
+                        "background": "url('../Assets/images/female_active.png')",
+                        "width": "100px",
+                        "height": "100px",
+                        "background-size": "cover"
+                    });
+                    $("#male_label_NA").css({
+                        "background": "url('../Assets/images/male.png')",
+                        "width": "100px",
+                        "height": "100px",
+                        "background-size": "cover"
+                    });
+                    $("#transgender_label").css({
+                        "background": "url('../Assets/images/transgender.png')",
+                        "width": "100px",
+                        "height": "100px",
+                        "background-size": "cover"
+                    });
+                });
+
+                $("#single_label").click(function () {
+                    $("#single_label").css({
+                        "background": "url('../Assets/images/single-selected.png')",
+                        "width": "100px",
+                        "height": "100px",
+                        "background-size": "cover"
+                    });
+                    $("#married_label").css({
+                        "background": "url('../Assets/images/married.png')",
+                        "width": "100px",
+                        "height": "100px",
+                        "background-size": "cover"
+                    });
+                });
+                $("#married_label").click(function () {
+                    $("#married_label").css({
+                        "background": "url('../Assets/images/married-selected.png')",
+                        "width": "100px",
+                        "height": "100px",
+                        "background-size": "cover",
+                        "margin-right": "20px"
+                    });
+                    $("#single_label").css({
+                        "background": "url('../Assets/images/single.png')",
+                        "width": "100px",
+                        "height": "100px",
+                        "background-size": "cover"
+                    });
+                });
+            </script>
+            <script src="../Assets/js/highcharts.js" type="text/javascript"></script>
+            <script src="../Assets/js/exporting.js" type="text/javascript"></script>
+            <script src="needAnalysis.js" type="text/javascript"></script>
+            <script src="NeedAnalysisPDF.js" type="text/javascript"></script>
+            <!-- <script src="../global/DBHelper.js" type="text/javascript"></script> -->
+            <script src="../Assets/js/pdfmake.min.js" type="text/javascript"></script>
+            <script src="../Assets/js/vfs_fonts.js" type="text/javascript"></script>
+            <script src="productListData.js" type="text/javascript"></script>
+            <link href="NeedAnalysis.css" rel="stylesheet" />
+            <script src="../Chatbot/chatbot-window-10092019.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy Access - Revival Quotation</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../../Assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../Assets/bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../Assets/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../../Assets/dist/css/skins/_all-skins.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- Common css -->
+    <link rel="stylesheet" href="../../Assets/css/common.css">
+    <link rel="stylesheet" href="../../Chatbot/chatbot-css.css">
+    <!-- <link rel="stylesheet" href="../../Assets/css/custom.css"> -->
+    <style>
+        .viewDetailsBtn {
+            height: 40px;
+            margin-top: 10px;
+            background-color: #db5b06;
+            border-color: none;
+            border-color: #db5b06;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini element">
+    <div id="wait" style="display:none;z-index:1000;width:69px;height:89px;position:absolute;top:50%;left:50%;padding:2px;">
+        <img src='../../Assets/images/demo_wait.gif' width="64" height="64" />
+        <br>
+    </div>
+
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+
+            <nav class="navbar  navbar-static-top" id="navbar">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" style="display: none" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <span class="logo-head" style="display: inline-block;margin-left: 20px;padding: 5px 0px;">
+                    <b style="font-weight: 600;font-size: 20px;">Easy Access</b>
+                </span>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+
+        <style type="text/css">
+            li.active,
+            .first>a {
+                display: none;
+            }
+        </style>
+
+        <aside class="main-sidebar" id="sideNavBar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li>
+                        <a href="../../ViewPolicy/ViewPolicy.html">
+                            <img class="nav-icon" src="../../Assets/images/home.png">
+                            <span>View Policy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Queries/Queries.html">
+                            <img class="nav-icon" src="../../Assets/images/speech-bubble.png">
+                            <span>Queries</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../MyInfo/MyInfo.html">
+                            <img class="nav-icon" src="../../Assets/images/layers.png">
+                            <span>My Info</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Forms/Forms.html">
+                            <img class="nav-icon" src="../../Assets/images/paper-pencil-and-calculator.png">
+                            <span>Forms</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Claim/Claim.html">
+                            <img class="nav-icon" src="../../Assets/images/business-deal.png">
+                            <span>Claim</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../RenewalPremium-Login/RenewalPremiumPostLogin.html">
+                            <img class="nav-icon" src="../../Assets/images/shopping-cart.png">
+                            <span>Pay Renewal Premium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../E-Statement/eStatement.html">
+                            <img class="nav-icon" src="../../Assets/images/link.png">
+                            <span>E-Statement / PPC</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../Services/Services.html">
+                            <img class="nav-icon" src="../../Assets/images/customer-service.png">
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="onLogOut('../../')">
+                            <img class="nav-icon" src="../../Assets/images/logout.png">
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <!-- Main content -->
+            <section class="content">
+                <!-- Main div start from here-->
+                <!-- cards -->
+
+                <div class="box-header pageHeaderDiv" style="padding-top: 0px;">
+                    <h3 class="box-title">Revival Quotation</h3>
+                </div>
+                <!-- end cards -->
+                <div class="container-fluid bg-3 text-center topMarginForMainDiv" style="width: unset;">
+                    <!-- <div class="container-fluid bg-3 text-center"> -->
+                    <div class="row businesses">
+                        <!-- <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12"> -->
+
+                        <form name="revivalQuatationForm" onsubmit="return false" style="color: #5f5e5e;text-align:left;font-weight:600">
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-6 col-sm-8 col-xs-10 col-xs-offset-1 input-group">
+                                    <label class="claim-label" style="font-weight: bold;">Policy Number</label>
+
+                                    <select class="form-control premium-input" name="policyNumber">
+
+                                    </select>
+                                    <span class="input-group-btn" style="padding:0px">
+                                        <button class="btn btn-success" id="btn_Ok" type="submit" style="background-color: #64017e;border-color: #64017e;margin-top: 24px;"
+                                            onclick="validate()">
+                                            <i class="glyphicon glyphicon-search " aria-hidden="true"></i> Submit
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- <form name="revivalQuatationForm" action="#" onsubmit="return false" style="color: #5f5e5e;text-align:left;font-weight:600">
+    
+                                    <div class="form-group">
+                                            <label class="claim-label">Policy Number</label>
+                                            <select class="form-control premium-input" name="policyNumber">
+                                            
+                                            </select>
+                                    </div>
+    
+                                    <div class="button_box" style="text-align:center">
+                                        <button class="btn btn-primary form_button bottomBtns" value="Submit" onclick="validate()">SUBMIT</button>
+                                    </div>
+                                    <br />
+                                </form> -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="total_count" class="text-left"></h4>
+                                <div id="display-resources"></div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <!-- </div> -->
+
+                </div>
+
+                <!-- Main div start from here-->
+
+            </section>
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 col-xs-6 footer-left">
+                    <strong>
+                        <span class="sub">FAQs</span>
+                        <span style="color: #0a66b3; padding: 0px 6px 0px 6px;">Register for Updates
+                        </span>
+                    </strong>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 col-xs-6 footer-right">
+                    <strong>
+                        <span style="padding:0px 6px 0px 6px;color:#0a66b3;text-align: -webkit-right"> Follow us on:
+                        </span>
+                        <a href="#" id="foot" class="fa fa-facebook"></a>
+                        <a href="#" id="foot" class=" fa fa-twitter"></a>
+                        <a href="#" id="foot" class="fa fa-youtube"></a>
+                    </strong>
+                </div> -->
+            </div>
+        </footer>
+
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="../../Assets/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="../../Assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../../Assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- AdminLTE App -->
+        <script src="../../Assets/dist/js/adminlte.min.js"></script>
+        <script src="../../Global/Global.js"></script>
+        <script>
+            sideNavBar.innerHTML = getPostLoginSideBar('../../');
+        </script>
+        <script src="../../Assets/js/common.js"></script>
+        <script src="RevivalQuatation.js"></script>
+        <script src="../../Chatbot/chatbot-window-10092019.js"></script>
+</body>
+
+</html>

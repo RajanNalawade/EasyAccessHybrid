@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy Access - View Policy</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" type="image/x-icon" href="../../../favicon.ico">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../../../Assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../../Assets/bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../../Assets/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../../../Assets/dist/css/skins/_all-skins.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- Common css -->
+    <link rel="stylesheet" href="../../../Assets/css/common.css">
+    <link rel="stylesheet" href="../../../Chatbot/chatbot-css.css">
+    <!-- <link rel="stylesheet" href="../Assets/css/custom.css"> -->
+    <style>
+        .viewDetailsBtn {
+            height: 40px;
+            margin-top: 10px;
+            background-color: #db5b06;
+            border-color: none;
+            border-color: #db5b06;
+        }
+
+        th {
+            background-color: #8cb7ff;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            font-size: 12px;
+            vertical-align: top;
+            white-space: nowrap !important;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div id="wait" style="display:none;z-index:1000;width:69px;height:89px;position:absolute;top:50%;left:50%;padding:2px;">
+        <img src='../../../Assets/images/demo_wait.gif' width="64" height="64" />
+        <br>
+    </div>
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+
+            <nav class="navbar  navbar-static-top" id="navbar">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" style="display: none" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <span class="logo-head" style="display: inline-block;margin-left: 20px;padding: 5px 0px;">
+                    <b style="font-weight: 600;font-size: 20px;">View Policy</b>
+                </span>
+            </nav>
+        </header>
+
+        <aside class="main-sidebar" id="sideNavBar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li>
+                        <a href="../../../ViewPolicy/ViewPolicy.html">
+                            <img class="nav-icon" src="../../../Assets/images/home.png">
+                            <span>View Policy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../Queries/Queries.html">
+                            <img class="nav-icon" src="../../../Assets/images/speech-bubble.png">
+                            <span>Queries</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../MyInfo/MyInfo.html">
+                            <img class="nav-icon" src="../../../Assets/images/layers.png">
+                            <span>My Info</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../Forms/Forms.html">
+                            <img class="nav-icon" src="../../../Assets/images/paper-pencil-and-calculator.png">
+                            <span>Forms</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../Claim/Claim.html">
+                            <img class="nav-icon" src="../Assets/images/business-deal.png">
+                            <span>Claim</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../RenewalPremium-Login/RenewalPremiumPostLogin.html">
+                            <img class="nav-icon" src="../../../Assets/images/shopping-cart.png">
+                            <span>Pay Renewal Premium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../E-Statement/E-Statement.html">
+                            <img class="nav-icon" src="../../../Assets/images/link.png">
+                            <span>E-Statement / PPC</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../../Services/Services.html">
+                            <img class="nav-icon" src="../../../Assets/images/customer-service.png">
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="onLogOut('../../../')">
+                            <img class="nav-icon" src="../../../Assets/images/logout.png">
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <form name="detailsForm">
+                <!-- Content Header (Page header) -->
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Main div start from here-->
+                    <!--<div class="box-header">
+                    <h3 class="box-title">View Policy</h3>
+                </div>-->
+
+                    <div class="container">
+                        <!-- <h5>List of Registered policies on MyPolicy.</h5> -->
+
+                        <h5 style="font-weight:bold; display: none" id="polNum">Policy Number:
+                            <label id="policyNumb"></label>
+                        </h5>
+                        <h5 style="font-weight:bold; display: none" id="polHolder">Policy Holder's Name:
+                            <label id="polHolderName"></label>
+                        </h5>
+
+
+                        <div style="background: #ffffff;">
+                            <div id="display-resources"></div>
+                        </div>
+                        <br/>
+                        <div>
+                            <label id="value" style="display: none">*Value as on</label>
+
+                        </div>
+                        <br/>
+                        <div style="background: #ffffff;">
+                            <div id="display-resources1"></div>
+                        </div>
+                        <br/>
+                        <div id="details" style="display: none">
+                            <label>* For product code 39 and 41 switch from C fund to A fund or C fund to B fund is not permissible
+                                and in from column you will have to give total % instead of separate % for each fund available
+                                under A or B.</label>
+                            <label>* The total of TO column must be equal to 100% for Fund Switch.</label>
+                            <label>* Switching charges would be levied as per the policy conditions.</label>
+                            <label>* Fund switch should always be in the permissible percentages only, subject to minimum switch
+                                amount as indicated in the given table
+                                <u>Click here</u>
+                            </label>
+                            <label>* The same fund should not be selected in 'FROM' and 'TO' column for Fund Switch.</label>
+                            <label>* The number of freee switches allowed in a Policy Year will include the requestd processed at
+                                SBI Life Branches and Transactions done online.</label>
+                            <label>* An unused free switches cannot be carried forward to the future policy year.</label>
+                            <label>* The switch transactions will be processed by liquidating an appropriate number of units in
+                                the Fund from which switch has been requested for.</label>
+                            <label>* Please mail us to fundswitch@sbilife.co.in for clarification or grievance.</label>
+                            <label>* For more details please refer policy document.</label>
+                        </div>
+                        <br/>
+                        <div class="row" id="declaration" style="display: none">
+                            <div class="col-sm-1" style="padding: unset;padding-left: 30px;">
+                                <input type="checkbox" name="agree">
+                            </div>
+                            <div class="col-sm-11">
+                                I hereby declare that all payments routed through this application are sourced from my bank account/ credit card/debit card
+                                and the details furnished are true and correct. I shall not holds SBI Life Responsible for
+                                technical errors in the payent process or non-credit/non-payment of payout or refund if any
+                                due to any reason including but not limited to incorrect/incomplete information.</div>
+                            <br>
+                            <div class=" col-sm-8" style="margin-top: 10px;">
+                                <button type="button" name="submit" class="btnsubmit" onclick="validate()">SUBMIT</button>
+                                <button class="btnreset">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+        <!-- ./wrapper -->
+        <!-- jQuery 3 -->
+        <script src="../../../Assets/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="../../../Assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../../../Assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- AdminLTE App -->
+        <script src="../../../Assets/dist/js/adminlte.min.js"></script>
+
+        <!-- sticky navbar -->
+        <script src="../../../Global/Global.js"></script>
+        <script>
+            sideNavBar.innerHTML = getPostLoginSideBar('../../../');
+        </script>
+        <script src="../../../Assets/js/common.js"></script>
+        <script src="FundSwitchDetails.js"></script>
+        <script src="../../../Assets/js/aes.js"></script>
+        <script src="../../../Chatbot/chatbot-window-10092019.js"></script>
+    </div>
+</body>
+
+</html>

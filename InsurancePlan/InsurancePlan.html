@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy Access - Insurance Plans</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../Assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../Assets/bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../Assets/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../Assets/dist/css/skins/_all-skins.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- Common css -->
+    <link rel="stylesheet" href="../Assets/css/common.css">
+    <link rel="stylesheet" href="../Chatbot/chatbot-css.css">
+    <!-- <link rel="stylesheet" href="../Assets/css/custom.css"> -->
+    <style>
+        .viewDetailsBtn {
+            height: 40px;
+            margin-top: 10px;
+            background-color: #db5b06;
+            border-color: none;
+            border-color: #db5b06;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini element">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+
+            <nav class="navbar  navbar-static-top" id="navbar">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" style="display: none" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <span class="logo-head" style="display: inline-block;margin-left: 20px;padding: 5px 0px;">
+                    <b style="font-weight: 600;font-size: 20px;">Easy Access</b>
+                </span>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+
+        <style type="text/css">
+            li.active,
+            .first>a {
+                display: none;
+            }
+        </style>
+
+        <aside class="main-sidebar" id="sideNavBar">
+            <!-- sidebar: style can be found in sidebar.less -->
+
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <!-- Main content -->
+            <section class="content">
+                <!-- Main div start from here-->
+                <!-- cards -->
+                <div class="box-header pageHeaderDiv" style="padding-top: 0px;">
+                    <h3 class="box-title">Insurance Plans</h3>
+                </div>
+                <div class="container topMarginForMainDiv" style="width: unset;">
+                    <form name="InsurancePlanForm">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 clearfix block_container">
+                                <div class="card-box-container card-box">
+                                    <div class="card-icon">
+                                        <img class="card-img" src="../Assets/images/product/diagram.png">
+                                    </div>
+                                    <div class="card-header">
+                                        <p class="p1">Unit Linked Plans</p>
+                                        <select class="form-control card-select" name="ulipPlans">
+                                            <option>SBI Life -Smart Privilege</option>
+                                            <option>SBI Life -Smart Power Insurance</option>
+                                            <option>SBI Life -Saral Maha Anand</option>
+                                            <option>SBI Life -Smart Wealth Assure</option>
+                                            <option>SBI Life -Smart Elite</option>
+                                            <option>SBI Life -Smart Wealth Builder</option>
+                                            <option>SBI Life -Saral InsureWealth Plus</option>
+                                            <option>SBI Life -Smart InsureWealth Plus</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary btn-lg viewDetailsBtn" onclick="onViewDetails('ulipPlans')">
+                                            <span>View Details</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 card-box clearfix block_container">
+                                <div class="card-box-container card-box">
+                                    <div class="card-icon">
+                                        <img class="card-img" src="../Assets/images/product/pension.png">
+                                    </div>
+                                    <div class="card-header">
+                                        <p class="p1">Pension Plans</p>
+                                        <select class="form-control card-select" name="pensionPlans">
+                                            <option>SBI Life - Annuity Plus</option>
+                                            <option>SBI Life -Saral Pension</option>
+                                            <option>SBI Life -Retire Smart</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary btn-lg viewDetailsBtn" onclick="onViewDetails('pensionPlans')">
+                                            <span>View Details</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 third-box clearfix block_container">
+                                <div class="card-box-container card-box">
+                                    <div class="card-icon">
+                                        <img class="card-img" src="../Assets/images/product/shield.png">
+                                    </div>
+                                    <div class="card-header">
+                                        <p class="p1">Protection Plans</p>
+                                        <select class="form-control card-select" name="protectionPlans">
+                                            <option>SBI Life - Smart Shield</option>
+                                            <option>SBI Life - Saral Shield</option>
+                                            <option>SBI Life - Smart Swadhan Plus</option>
+                                            <option value="brochure.php">SBI Life -Sampoorn Cancer Suraksha</option>
+                                            <option>SBI Life -Poorna Suraksha</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary btn-lg viewDetailsBtn" onclick="onViewDetails('protectionPlans')">
+                                            <span>View Details</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 card-box clearfix block_container">
+                                <div class="card-box-container card-box">
+                                    <div class="card-icon">
+                                        <img class="card-img" src="../Assets/images/product/learning.png">
+                                    </div>
+                                    <div class="card-header">
+                                        <p class="p1">Chlid Future Plans</p>
+                                        <select class="form-control card-select" name="childPlans">
+                                            <option>SBI Life -Smart Champ Insurance</option>
+                                            <option>SBI Life -Smart Scholar</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary btn-lg viewDetailsBtn" onclick="onViewDetails('childPlans')">
+                                            <span>View Details</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 card-box clearfix block_container">
+                                <div class="card-box-container card-box">
+                                    <div class="card-icon">
+                                        <img class="card-img" src="../Assets/images/product/accounting.png">
+                                    </div>
+                                    <div class="card-header">
+                                        <p class="p1">Saving Plans</p>
+                                        <select class="form-control card-select" name="savingPlans">
+                                            <option>SBI Life -Smart Women Advantage</option>
+                                            <option>SBI Life -Smart Humsafar</option>
+                                            <option>SBI Life -Saral Money Planner</option>
+                                            <option>SBI Life -Smart Income Protect</option>
+                                            <option>SBI Life -Shubh Nivesh</option>
+                                            <option>SBI Life -Flexi Smart Plus</option>
+                                            <option>SBI Life -Smart Money Back Gold</option>
+                                            <option>SBI Life -Saral Sawdhan Plus</option>
+                                            <option>SBI Life -Smart Bachat</option>
+                                            <option>SBI Life -Smart Samriddhi</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary btn-lg viewDetailsBtn" onclick="onViewDetails('savingPlans')">
+                                            <span>View Details</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 third-box clearfix block_container">
+                                <div class="card-box-container card-box">
+                                    <div class="card-icon">
+                                        <img class="card-img" src="../Assets/images/product/networking.png">
+                                    </div>
+                                    <div class="card-header">
+                                        <p class="p1">Group Plans</p>
+                                        <select class="form-control card-select" name="groupPlans">
+                                            <option>SBI Life- RiNnRaksha(SBG)</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary btn-lg viewDetailsBtn" onclick="onViewDetails('groupPlans')">
+                                            <span>View Details</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 card-box clearfix block_container box-grow" style="cursor: pointer;">
+                                <a href="https://agencyonline.sbilife.co.in/childeduplannertest/index.jsp?enc=ZYOlw4j418Nx09XyVy6BY4Cijql3NNOiBpcmRhWIp80=">
+                                    <div class="card-box-container card-box">
+                                        <div class="card-icon">
+                                            <img class="card-img" src="../Assets/images/product/student.png">
+                                        </div>
+                                        <div class="card-header">
+                                            <p class="p1" style="padding-top: 20px;">
+                                                <span style="color:#3e3d3d;">Child Education Planner</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 card-box clearfix block_container box-grow" style="cursor: pointer;">
+                                <a href="https://agencyonline.sbilife.co.in/retirement/index.jsp?enc=ZYOlw4j418Nx09XyVy6BY4Cijql3NNOiBpcmRhWIp80=">
+                                    <div class="card-box-container card-box">
+                                        <div class="card-icon">
+                                            <img class="card-img" src="../Assets/images/product/hourglass.png">
+                                        </div>
+                                        <div class="card-header">
+                                            <p class="p1" style="padding-top: 20px;">
+                                                <span style="color:#3e3d3d;">Retirement Planner</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 third-box clearfix block_container box-grow" style="cursor: pointer;">
+                                <a href="https://agencyonline.sbilife.co.in/hlvcalculator?enc=ZYOlw4j418Nx09XyVy6BY4Cijql3NNOiBpcmRhWIp80=">
+                                    <div class="card-box-container card-box">
+                                        <div class="card-icon">
+                                            <img class="card-img" src="../Assets/images/product/calculator.png">
+                                        </div>
+                                        <div class="card-header">
+                                            <p class="p1" style="padding-top: 20px;">
+                                                <span style="color:#3e3d3d;">HLV Calculator</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <!-- end cards -->
+
+
+                <!-- Main div start from here-->
+
+            </section>
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 col-xs-6 footer-left">
+                    <strong>
+                        <span class="sub">FAQs</span>
+                        <span style="color: #0a66b3; padding: 0px 6px 0px 6px;">Register for Updates
+                        </span>
+                    </strong>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 col-xs-6 footer-right">
+                    <strong>
+                        <span style="padding:0px 6px 0px 6px;color:#0a66b3;text-align: -webkit-right"> Follow us on:
+                        </span>
+                        <a href="#" id="foot" class="fa fa-facebook"></a>
+                        <a href="#" id="foot" class=" fa fa-twitter"></a>
+                        <a href="#" id="foot" class="fa fa-youtube"></a>
+                    </strong>
+                </div> -->
+            </div>
+        </footer>
+
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="../Assets/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="../Assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../Assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- AdminLTE App -->
+        <script src="../Assets/dist/js/adminlte.min.js"></script>
+
+        <script src="../Assets/js/common.js"></script>
+        <script src="../Global/Global.js"></script>
+        <script src="InsurancePlan.js"></script>
+        <script>
+            sideNavBar.innerHTML = getPreLoginSideBar('../');
+        </script>
+        <script src="../Chatbot/chatbot-window-10092019.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy Access - News</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../Assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../Assets/bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../Assets/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../Assets/dist/css/skins/_all-skins.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- Common css -->
+    <link rel="stylesheet" href="../Assets/css/common.css">
+    <link rel="stylesheet" href="../Chatbot/chatbot-css.css">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini element">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+
+            <nav class="navbar  navbar-static-top" id="navbar">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" style="display: none" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <span class="logo-head" style="display: inline-block;margin-left: 20px;padding: 5px 0px;">
+                    <b style="font-weight: 600;font-size: 20px;">Easy Access</b>
+                </span>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+
+        <style type="text/css">
+            li.active,
+            .first>a {
+                display: none;
+            }
+        </style>
+
+        <aside class="main-sidebar" id="sideNavBar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="active treeview menu-open first">
+                        <a href="#">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Home/Home.html">
+                            <img class="nav-icon" src="../Assets/images/home.png">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../MyPolicyLogin/MyPolicyLogin.html">
+                            <img class="nav-icon" src="../Assets/images/policy.png">
+                            <span>Policy Login</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../InsurancePlan/InsurancePlan.html">
+                            <img class="nav-icon" src="../Assets/images/layers.png">
+                            <span>Insurance Plans</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../PremiumCalculator/PremiumCalculator.html">
+                            <img class="nav-icon" src="../Assets/images/paper-pencil-and-calculator.png">
+                            <span>Premium Calculator</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../NeedAnalysis/NeedAnalysis.html">
+                            <img class="nav-icon" src="../Assets/images/analysis.png">
+                            <span>Need Analysis</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../BuyOnlineProducts/BuyOnlineProducts.html">
+                            <img class="nav-icon" src="../Assets/images/shopping-cart.png">
+                            <span>Buy Online Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../UsefulLinks/UsefulLinks.html">
+                            <img class="nav-icon" src="../Assets/images/link.png">
+                            <span>Useful Links</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../QueriesAndComplaints/QueriesAndComplaints.html">
+                            <img class="nav-icon" src="../Assets/images/customer-service.png">
+                            <span>Query/Complaints</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../RenewalPremium-PreLogin/RenewalPremium-PreLogin.html">
+                            <img class="nav-icon" src="../Assets/images/recycle-sign.png">
+                            <span>Pay Renewal Premium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../News/News.html">
+                            <img class="nav-icon" src="../Assets/images/newspaper.png">
+                            <span>News</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="../Let'sChat-RIA/Let'sChat-RIA.html">
+                            <img class="nav-icon" src="../Assets/images/user-1.png">
+                            <span>Let's Chat - RIA</span>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="../ProductExplainerVideos/ProductExplainerVideos.html">
+                            <img class="nav-icon" src="../Assets/images/pre-sales_viedo.png">
+                            <span>Product Explainer Videos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../ContactUs/ContactUs.html">
+                            <img class="nav-icon" src="../Assets/images/contact.png">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Settings/Settings.html">
+                            <img class="nav-icon" src="../Assets/images/settings.png">
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <!-- Main content -->
+            <section class="content" style="padding:0px">
+                <!-- Main div start from here-->
+
+                <div class="box-header pageHeaderDiv" style="padding-top: 0px;">
+                    <h3 class="box-title">News</h3>
+                </div>
+                <div class="box-header" style="padding-left:15px">
+                    <h3 class="box-title">Latest News</h3>
+                </div>
+
+                <!-- cards -->
+                <div class="container" style="width: unset;">
+                    <!-- card 1 -->
+                    <div class="newsCardHeaderDiv" id="newsMainCard1" onclick="expandCollapseNewsDetails('newwsSubCard1')">
+                        <h5 class="newsHeader">Sanjeev Nautiyal takes over as SBI Life MD and CEO</h5>
+                        <div class="pageSubHeader">PTI
+                            <br> See this story in: The Financial Express
+                        </div>
+                    </div>
+                    <div class="newsDetails" id="newwsSubCard1" style="display:none">
+                        SBI Life Insurance Company said Sanjeev Nautiyal has taken over as the company’s Managing Director and CEO. The company has
+                        received an approval from the Insurance and Regulatory Authority of India (IRDA) in relation to the
+                        appointment of Sanjeev Nautiyal as the MD and CEO, it said in a BSE filing. “…accordingly, Sanjeev
+                        Nautiyal will assume the office of MD and CEO of our company with immediate effect,” it added. He
+                        succeeds Arijit Basu, who has now been posted as Deputy Managing Director of Corporate Accounts Group
+                        of the parent company, SBI.
+                        <br>
+                        <br> SBI Life is a joint venture between the country’s largest lender State Bank of India (SBI) and global
+                        insurance company BNP Paribas Cardiff.
+                        <br>
+                        <br>
+                        <a href="http://www.financialexpress.com/industry/banking-finance/sanjeev-nautiyal-takes-over-as-sbi-life-md-and-ceo/1094086/">
+                            <u class="linkColor">http://www.financialexpress.com/industry/banking-finance/sanjeev-nautiyal-takes-over-as-sbi-life-md-and-ceo/1094086/</u>
+                        </a>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="newsCardHeaderDiv" id="newsMainCard2" onclick="expandCollapseNewsDetails('newwsSubCard2')">
+                        <h5 class="newsHeader">SBI Life aims to further strengthen its customer centric business processes in Bhubaneswar Region</h5>
+                        <div class="pageSubHeader">Bhubaneswar, 26th</div>
+                    </div>
+                    <div class="newsDetails" id="newwsSubCard2" style="display:none">
+                        February 2018: SBI Life Insurance, one of the most trusted private life insurers in the country, today held a press meet
+                        to discuss the launch of its new offering SBI Life - Poorna Suraksha and customer centric initiatives
+                        taken up by the Company. Mr. Ravindra Kumar, President –Zone 3, SBI Life addressed the meet along
+                        with and Mr. Sanjay Bhatnagar, Regional Director – Bhubaneswar Region, SBI Life.
+                        <br>
+                        <br> On Region’s performance, Mr. Ravindra Kumar, President – Zone 3, SBI Life expressed that, "Bhubaneswar
+                        is a key market for us and we always ensure that the corporate ethos of SBI Life reflects in the
+                        qualitative business practices in the region as well. This has led us to become forerunners in case
+                        of premium growth. We are committed to this region and have designed our products and services keeping
+                        the needs of this region in mind.
+                        <br>
+                        <br> On the recent launch of SBI Life’s new product, Mr. Sanjay Bhatnagar said, "Customer centricity
+                        is our motto in all our businesses and processes. We realised that a man’s needs change as per his
+                        age and situation and keeping these essentials at focus we have designed SBI Life - Poorna Suraksha.
+                        It is a one of its kind plan, which is a non-linked non-participating, term assurance plan, with
+                        an inbuilt Critical Illness cover. The plan offers coverage for a wide range of 36 critical illnesses.
+                        It helps one to boost his/her financial planning by providing Life and Critical Illness cover, which
+                        auto re-balances with the evolving needs as the age progresses.
+                        <br>
+                        <br> SBI Life always strives to offer their customers excellent services and facilities. In this endeavour,
+                        SBI Life has integrated its customer services with technology which aids customers. Initiatives like
+                        ‘Connect Life’ – a tablet based application for assisting the Sales Representative to sell a SBI
+                        Life Insurance Policy. This application makes the entire process of policy issuance faster and smooth
+                        for the customers. With an intent to offer customers all information of their policy on their fingertips,
+                        the Company offers ‘Easy Access’ - an intuitive mobile application which offers services like Renewal
+                        Premium Payment, Policy Details, SBi life Product etc on the go. SBI Life goes one step further when
+                        it comes to ensuring customer satisfaction. SBI Life also does a pre-issuance welcome call to customers,
+                        which verifies the customer and product details with the customers before issuance of the policy.
+                        This initiative has helped the Company in increasing persistency and decreasing the mis-selling cases
+                        which in turn enhances customer satisfaction. SBI Life provides livelihood to 6620 plus local population
+                        in the Region through its 41 offices and a strong workforce of around 561 employees. SBI Life distributes
+                        its products through a strong network of over 6064 well trained Insurance Advisors, 1451 CIFs and
+                        877 State Bank of India branches. The Regional Rural Bank (RRB) Utkal Gramin Bank, through its large
+                        network of 442 branches across region, has helped insurance penetration in the region by distribution
+                        of our products to the customers in the most rural segment of the society.
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="newsCardHeaderDiv" id="newsMainCard3" onclick="expandCollapseNewsDetails('newwsSubCard3')">
+                        <h5 class="newsHeader">Women not averse to investing in life insurance products</h5>
+                        <div class="pageSubHeader">Sangeetha G.
+                            <br>Financial Chronicle</div>
+                    </div>
+                    <div class="newsDetails" id="newwsSubCard3" style="display:none">
+                        Chennai: The general notion of wo¬men wanting to invest in physical assets like gold and property need not be true. With
+                        awareness about different savings products incre¬a¬sing, women prefer to invest in life insurance
+                        products.
+                        <br>
+                        <br> A survey done by India First Life Insurance and Assocham found that life insurance was the most
+                        popular choice of the respondents with at least 72 per cent wa¬nting to invest in it followed by
+                        deposits both fixed and recurring at 69 per cent and mutual funds at 61 per cent.
+                        <br>
+                        <br> Of them, 49 per cent preferred to invest in real estate, 48 per cent in gold and electronic traded
+                        funds and 43 per cent in PPF accounts. The choices that were least preferred by the respondents were
+                        bonds (19 per cent), stocks and equities (21 per cent) and pension fund account (36 per cent).
+                        <br>
+                        <br> This popularity of life insurance can be attributed to the varied needs it covers, like that of
+                        savings and protection in one go. It can also be inferred that our respondents prefer safe returns
+                        co¬mpared to direct risks ass¬o¬ciated with equity or sha¬r¬es, but have started taking exposure
+                        to equity through the mutual fund route. The lo¬wer preference of gold and real estate can be attributed
+                        to the scenario changes post demonetisation.
+                        <br>
+                        <br> "There is a potential for income growth of Indian wo¬men, which will convert th¬em into a huge ma¬rket
+                        for insurers," said RM Vishakha, MD and CEO of IndiaFirst Life Insurance Company.
+                        <br>
+                        <br> When it came to time ho¬r¬izon in terms of investment, 46 per cent prefer investing for less than
+                        5 years, 38 per cent up to 10 years and 16 per cent more than 10 years to achieve their financial
+                        go¬als. Majority of women (69 per cent) relied on their fa¬milies while making investment decisions
+                        <br>
+                        <br> Within life insurance, 47 per cent of the respondents preferred money back plans, expressing the
+                        need for financial liquidity to maintain their expenses in the short term. Whole life policy was
+                        preferred by 35 per cent as it provides coverage for life, help in meeting the retirement and long
+                        term saving goals. Only 31 per cent preferred term life insurance.
+                        <br>
+                        <br> The respondents, which included both house wives and working women, were cl¬ear about their financial
+                        priorities. Almost 68 per ce¬nt of the respondents wanted to use their surplus funds in investment
+                        plans and ensure a secured financial future for themselves against activities such as beauty tre¬a¬tments
+                        (6 per cent), short road trips (6 per cent), shopping online (12 per cent) or a coffee date with
+                        friends (7 per cent). It also points to the scenario where women have started valuing their own needs
+                        and are willing to make monetary decisions.
+                        <br>
+                        <br> Their top 3 financial go¬als to be fulfilled through investments the first priority was protection
+                        of family and loved ones (73 per cent) and needs of children like education, marriage (50 per cent)
+                        came in the second spot.
+                        <br>
+                        <br>
+                        <a href="http://www.mydigitalfc.com/miscellany/women-not-averse-investing-life-insurance-products">
+                            <u class="linkColor">http://www.mydigitalfc.com/miscellany/women-not-averse-investing-life-insurance-products</u>
+                        </a>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="newsCardHeaderDiv" id="newsMainCard4" onclick="expandCollapseNewsDetails('newwsSubCard4')">
+                        <h5 class="newsHeader">LIC a big investor in many companies in bankruptcy process</h5>
+                        <div class="pageSubHeader">Jwalit Vyas
+                            <br>The Economic Times
+                        </div>
+                    </div>
+                    <div class="newsDetails" id="newwsSubCard4" style="display:none">
+                        At a time when state-owned banks are in the cross hairs for lending to companies that eventually failed to service the debts,
+                        not many would be aware that the Life Insurance Corporation of India (LIC), country’s largest life
+                        insurance company, has made investments of significant magnitude in some of these companies.
+                        <br>
+                        <br>LIC has been an investor in several companies which are in the list of applications admitted by National
+                        Company Law Tribunal (NCLT) under the Insolvency and Bankruptcy Code, 2016 (IBC). The list includes
+                        Alok Industries, ABG Shipyard, Amtek Auto, Mandhana Industries, Jaypee Infratech, Jyoti Structures,
+                        Rainbow Papers and Orchid Pharma. Stocks of most of these companies have seen more than 95 per centvalue
+                        erosions from their peaks thereby denting the overall performance of the insurance provider.
+                        <br>
+                        <br>They should also firm-up their Cyber Crisis Management Plan (CCMP) for handling cyber incidents more
+                        effectively, the regulator said.
+                        <br>
+                        <br>Commenting on the company’s investments, Hemant Bhargava, managing director, LIC of India, said:
+                        "In the last three years, we have taken a conscious decision of investing only in the BSE200 companies.
+                        But you should know that LIC is an old institution and there are legacy investments about which there
+                        is nothing much we can do."
+                        <br>
+                        <br>The state-owned insurance company has also been the largest shareholder and probably the only institutional
+                        shareholder in companies such as Gitanjali Gems, Vakrangee, and Videocon Industries, which have been
+                        in the news for the wrong reasons and alleged for poor governance and lack of transparency.
+                        <br>
+                        <br>Other well-known names which have been great value destroyers but can be found in LIC’s portfolio
+                        include Reliance Communications, GTL Infra, Electrosteel Castings, Opto Circuits (India), Zylog Systems,
+                        Rolta India, Aban Offshore, Shree Renuka Sugars and Monnet Industries.
+                        <br>
+                        <br>At the end of December 2017, LIC held more than 1 per cent in 378 companies. Of these, 68 companies,
+                        or nearly one in every five companies, have a market capitalisation of less than Rs 100 crore.
+                        <br>
+                        <br>This is contrary to the perception that LIC invests in only large blue-chips.
+                        <br>
+                        <br>
+                        <a href="https://economictimes.indiatimes.com/markets/stocks/news/lic-a-big-investor-in-many-companies-in-bankruptcy-process/articleshow/63309592.cms">
+                            <u class="linkColor">https://economictimes.indiatimes.com/markets/stocks/news/lic-a-big-investor-in-many-companies-in-bankruptcy-process/articleshow/63309592.cms</u>
+                        </a>
+                    </div>
+
+                    <!-- card 5 -->
+                    <div class="newsCardHeaderDiv" id="newsMainCard5" onclick="expandCollapseNewsDetails('newwsSubCard5')">
+                        <h5 class="newsHeader">Life insurers see positive growth in February</h5>
+                        <div class="pageSubHeader">The Financial Express</div>
+                    </div>
+                    <div class="newsDetails" id="newwsSubCard5" style="display:none">
+                        Mumbai: The life insurance industry continued its positive growth in the month of February as private life insurers saw individual
+                        annual premium equivalent (APE) grow at 11.4% year-on-year in February. Market leader, state-owned
+                        Life Insurance Corporation of India (LIC), saw its individual APE grow at a slower 9.3% year-on-year
+                        to Rs 2,343.2 crore in February than its private peers, showed data compiled by brokerage Edelweiss.
+                        Even if we look at the data of the current financial year upto February 2018, LIC has registered
+                        lower individual APE at 15.4% as compared to private players, at 28%. Senior officials in the insurance
+                        industry say that, compared to the previous months there has been a slowdown across segments in February.
+                        “While overall growth momentum seems to be moderating (partially due to base effect), we maintain
+                        proclivity towards financial savings will persist and industry will regain growth momentum,” said
+                        the Edelweiss Report. It added that, higher ticket size was probably the key growth driver for private
+                        sector, implying a tilt towards unit linked insurance plans (ULIPs).
+                        <br>
+                        <br>Players like Bajaj Allianz, Kotak Life Insurance, Max Life, IndiaFirst Life Insurance and HDFC Life
+                        Insurance continued to see positive APE growth. “In the month of February most of the growth came
+                        from single premiums for both individual as well as group business. It is likely that, money might
+                        be going to Ulips for tax purpose. With equity funds being taxed at 10% we hope that numbers in March
+                        will also be strong for Ulips,” said a senior official with a leading insurance company. According
+                        to the data from the Insurance Regulatory and Development Authority of India (Irdai), first year
+                        premiums in the month of February for life insurance companies surged 27% to Rs 13,698.52 crore from
+                        Rs 10,791.68 crore in the corresponding period last fiscal.
+                        <br>
+                        <br>The Edelweiss report added: "Overall growth momentum (Ind APE) softened to 10.5% YoY growth in Feb’18,
+                        post weaker growth recorded by both private players and LIC, which clocked sub-10% YoY growth (YTD
+                        growth of 15%). Having said that, divergence was seen among players – while ICICI Prudential Life
+                        and SBI Life were largely responsible for the soft growth (private growth, ex- ICICI Prudential and
+                        SBI Life, stood at >22%), Max Life and HDFC Life reported better growth.
+                        <br>
+                        <br>
+                        <a href="http://www.financialexpress.com/market/life-insurers-see-positive-growth-in-february/1097678/">
+                            <u class="linkColor">http://www.financialexpress.com/market/life-insurers-see-positive-growth-in-february/1097678/</u>
+                        </a>
+                    </div>
+
+                    <!-- card 6 -->
+                    <div class="newsCardHeaderDiv" id="newsMainCard6" onclick="expandCollapseNewsDetails('newwsSubCard6')" style="display:none">
+                        <h5 class="newsHeader">SBI appoints P K Gupta as nominee director on SBI Life board</h5>
+                        <div class="pageSubHeader">PTI
+                            <br> See this story in: The Economic Times
+                        </div>
+                    </div>
+                    <div class="newsDetails" id="newwsSubCard6" style="display:none">
+                        New Delhi: SBI Life Insurance Company Ltd today said P K Gupta, SBI MD - Retail and Digital Banking, has been appointed by
+                        the parent firm as nominee director on its board.
+                        <br>
+                        <br>"...pursuant to the approval received from Department of Financial Services, Ministry of Finance...SBI
+                        has decided to nominate P K Gupta, MD (Retail & Digital Banking) as SBI Nominee Director in the board
+                        of directors of our company," SBI Life Insurance Company Ltd said in a filing to BSE.
+                        <br>
+                        <br>SBI is the promoter of SBI Life Insurance Company Ltd.
+                        <br>
+                        <br>The nomination remains subject to ratification by the Nomination and Remuneration committee of the
+                        board of directors of our company," the filing said.
+                        <br>
+                        <br>
+                        <a href="https://economictimes.indiatimes.com/industry/banking/finance/insure/sbi-appoints-p-k-gupta-as-nominee-director-on-sbi-life-board/articleshow/63176332.cms">
+                            <u class="linkColor">https://economictimes.indiatimes.com/industry/banking/finance/insure/sbi-appoints-p-k-gupta-as-nominee-director-on-sbi-life-board/articleshow/63176332.cms</u>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 col-xs-6 footer-left">
+                    <strong>
+                        <span class="sub">FAQs</span>
+                        <span style="color: #0a66b3; padding: 0px 6px 0px 6px;">Register for Updates
+                        </span>
+                    </strong>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 col-xs-6 footer-right">
+                    <strong>
+                        <span style="padding:0px 6px 0px 6px;color:#0a66b3;text-align: -webkit-right"> Follow us on:
+                        </span>
+                        <a href="#" id="foot" class="fa fa-facebook"></a>
+                        <a href="#" id="foot" class=" fa fa-twitter"></a>
+                        <a href="#" id="foot" class="fa fa-youtube"></a>
+                    </strong>
+                </div> -->
+            </div>
+        </footer>
+
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="../Assets/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="../Assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../Assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- AdminLTE App -->
+        <script src="../Assets/dist/js/adminlte.min.js"></script>
+
+        <script src="../Assets/js/common.js"></script>
+        <script src="../Global/Global.js"></script>
+        <script>
+            sideNavBar.innerHTML = getPreLoginSideBar('../');
+        </script>
+        <script src="News.js"></script>
+        <script src="../Chatbot/chatbot-window-10092019.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy Access - Contact Us</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../Assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../Assets/bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../Assets/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../Assets/dist/css/skins/_all-skins.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- Common css -->
+    <link rel="stylesheet" href="../Assets/css/common.css">
+    <link rel="stylesheet" href="../Chatbot/chatbot-css.css">
+    <style>
+        .carousel-control {
+            width: 4%;
+        }
+
+        .carousel-control.left,
+        .carousel-control.right {
+            background-image: none;
+        }
+
+        .glyphicon-chevron-left,
+        .carousel-control .glyphicon-chevron-right {
+            margin-top: -10px;
+            margin-left: -10px;
+            color: #444;
+        }
+
+        @media (max-width: 767px) {
+            .discover-slide>.item.next,
+            .discover-slide>.item.active.right {
+                left: 0;
+                -webkit-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0);
+            }
+            .discover-slide>.item.prev,
+            .discover-slide>.item.active.left {
+                left: 0;
+                -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+            }
+
+        }
+
+        @media (min-width: 767px) and (max-width: 992px) {
+            .discover-slide>.item.next,
+            .discover-slide>.item.active.right {
+                left: 0;
+                -webkit-transform: translate3d(50%, 0, 0);
+                transform: translate3d(50%, 0, 0);
+            }
+            .discover-slide>.item.prev,
+            .discover-slide>.item.active.left {
+                left: 0;
+                -webkit-transform: translate3d(-50%, 0, 0);
+                transform: translate3d(-50%, 0, 0);
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            .discover-slide>.item.next,
+            .discover-slide>.item.active.right {
+                left: 0;
+                -webkit-transform: translate3d(16.7%, 0, 0);
+                transform: translate3d(16.7%, 0, 0);
+            }
+            .discover-slide>.item.prev,
+            .discover-slide>.item.active.left {
+                left: 0;
+                -webkit-transform: translate3d(-16.7%, 0, 0);
+                transform: translate3d(-16.7%, 0, 0);
+            }
+
+        }
+
+        .img-res {
+            padding-left: 0px;
+            padding-right: 10px;
+        }
+
+        /**** animation ****/
+
+        .box-grow {
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .box-grow:hover {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .imgTop {
+            padding-top: 0px;
+        }
+
+        .cardHeader {
+            color: black;
+            font-weight: 600;
+            font-size: medium;
+            padding-top: 5px;
+            padding-left: 65px;
+        }
+
+        .smallBoxHeight {
+            height: 50px;
+            position: relative;
+            display: block;
+            box-shadow: 1px 1px 1px 0px lightgrey;
+            border: 1px solid #c0bebe;
+        }
+
+        .cardIcons {
+            padding-top: 8px !important;
+        }
+
+        .cardDetails {
+            padding: 15px;
+            font-size: medium;
+            border: 1px solid rgb(192, 190, 190);
+            box-shadow: lightgrey 1px 1px 1px 0px;
+        }
+
+        .formRow {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini element">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+
+            <nav class="navbar  navbar-static-top" id="navbar">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" style="display: none" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <span class="logo-head" style="display: inline-block;margin-left: 20px;padding: 5px 0px;">
+                    <b style="font-weight: 600;font-size: 20px;">Easy Access</b>
+                </span>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+
+        <style type="text/css">
+            li.active,
+            .first>a {
+                display: none;
+            }
+        </style>
+
+        <aside class="main-sidebar" id="sideNavBar">
+            <!-- sidebar: style can be found in sidebar.less -->
+
+            <!-- /.sidebar -->
+        </aside>
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <!-- Main content -->
+            <section class="content">
+                <!-- Main div start from here-->
+                <div class="box-header pageHeaderDiv" style="padding-top: 0px;">
+                    <h3 class="box-title">Contact Us</h3>
+                </div>
+
+                <div class="box-header" style="padding-left:15px;text-align:center">
+                    <h4 class="box-title" style="font-size: large;">We're always eager to hear from you, Please send your queries/suggestions</h4>
+                </div>
+
+
+                <div class="row topMarginForMainDiv">
+                    <div class="col-md-6 box-grow " id="MainCard1" onclick="expandCollapseNewsDetails('subCard1')">
+                        <a>
+                            <!-- small box -->
+                            <div class="small-box smallBoxHeight">
+                                <div class="icon cardIcons">
+                                    <img class="dash-icon" style="padding-top:0px" src="../Assets/images/phone.png">
+                                </div>
+                                <div class="inner">
+                                    <div class="cardHeader">Call Us</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="subCard1" class="cardDetails" style="display:none">
+                            <b>Toll Free Numbers:</b>
+                            <br>
+                            <u>1800-267-9090</u>
+                            <br> (Customer Service timings: 9:00 a.m. to 9:00 p.m., seven days a week)
+                            <br>
+                            <b>Corporate Office:</b>
+                            <br>
+                            <u>02261910000</u>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6  box-grow" id="MainCard2" onclick="expandCollapseNewsDetails('subCard2')">
+                        <a>
+                            <!-- small box -->
+                            <div class="small-box smallBoxHeight">
+                                <div class="icon cardIcons">
+                                    <img class="dash-icon" style="padding-top:0px" src="../Assets/images/email.png">
+                                </div>
+                                <div class="inner">
+                                    <div class="cardHeader">Email Us</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="subCard2" class="cardDetails" style="display:none">
+                            <a>
+                                <u class="linkColor">info@sbilife.co.in</u>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6  box-grow" id="MainCard3" onclick="expandCollapseNewsDetails('subCard3')">
+                        <a>
+                            <!-- small box -->
+                            <div class="small-box smallBoxHeight">
+                                <div class="icon cardIcons">
+                                    <img class="dash-icon" style="padding-top:0px" src="../Assets/images/share.png">
+                                </div>
+                                <div class="inner">
+                                    <div class="cardHeader">Connect with us</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="subCard3" class="cardDetails" style="display:none">
+                            <b>SBI Life Insurance Company Limited</b>
+                            <br>Corporate and Registered Office:
+                            <br>Natraj,
+                            <br>M.V. Road and Western Express
+                            <br>Highway Junction,
+                            <br>Andheri (East), Mumbai - 400069
+                            <br>
+                            <br>Website:
+                            <a href="http://www.sbilife.co.in/sbilife/content/home"></a>
+                            <u class="linkColor">www.sbilife.co.in</u>
+                            </a>
+                            <br>
+                            <br>CIN: L99999MH2000PLC129113 | IRDA of India Regn. No. 111
+                        </div>
+                    </div>
+
+                    <div class="col-md-6  box-grow" id="MainCard4">
+                        <a href="https://www.sbilife.co.in/en/about-us/contact-us">
+                            <!-- small box -->
+                            <div class="small-box smallBoxHeight">
+                                <div class="icon cardIcons">
+                                    <img class="dash-icon" style="padding-top:0px" src="../Assets/images/placeholder.png">
+                                </div>
+                                <div class="inner">
+                                    <div class="cardHeader">Branch Locator</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6  box-grow" id="MainCard5" onclick="expandCollapseNewsDetails('meetOurAdvisorSelected')">
+                        <a>
+                            <!-- small box -->
+                            <div class="small-box smallBoxHeight">
+                                <div class="icon cardIcons">
+                                    <img class="dash-icon" style="padding-top:0px" src="../Assets/images/meeting.png">
+                                </div>
+                                <div class="inner">
+                                    <div class="cardHeader">Meet Our Advisor</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row" id="meetOurAdvisorSelected" style="display:none;padding: 15px;">
+                    <div class="box-header" style="padding-left:15px;text-align:center">
+                        <h3 class="box-title">Meet Our Advisor</h3>
+                    </div>
+                    <form name="meetOurAdvisorForm" onsubmit="return false">
+                        <div class="row formRow">
+                            <div class="col-md-4">
+                                <p class="text-bold">Name *</p>
+                                <input type="text" name="name" value="" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="text-bold">Email *</p>
+                                <input type="email" name="email" class="form-control input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="text-bold">Address *</p>
+                                <input type="text" name="address" value="" class="form-control" required>
+                            </div>
+
+                        </div>
+
+                        <div class="row formRow">
+                            <div class="col-md-4">
+                                <p class="text-bold">Pin Code *</p>
+                                <input type="text" name="pinCode" value="" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="text-bold">City *</p>
+                                <input type="text" name="city" value="" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="text-bold">State *</p>
+                                <input type="text" name="state" value="" class="form-control" required>
+                            </div>
+
+                        </div>
+
+                        <div class="row formRow">
+                            <div class="col-md-4">
+                                <p class="text-bold">Mobile *</p>
+                                <input type="text" name="mobile" value="" class="form-control" required>
+                                <div id="mobileNoErrId" class="row errColor"></div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="text-bold">Phone (office)</p>
+                                <input type="text" name="officePhone" value="" class="form-control">
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="text-bold">Phone (Residence)</p>
+                                <input type="text" name="residencePhone" value="" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row formRow">
+                            <div class="col-md-4">
+                                <div style="width: 100%;display: inline-block;">
+                                    <p class="text-bold">Do you have any existing relationship with SBI/Associate Bank?</p>
+                                    <select class="form-control" name="isExistingRelationshipWithSBI">
+                                        <option>NO</option>
+                                        <option>Yes</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div style="width: 100%;display: inline-block;">
+                                    <p class="text-bold">Convenient Time to Contact</p>
+                                    <div class="col-md-6" style="padding: 0;">
+                                        <p class="text-bold">From</p>
+                                        <select class="form-control" name="fromTime">
+
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="text-bold">To</p>
+                                        <select class="form-control" name="toTime">
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row formRow">
+                            <div class="col-md-4">
+                                <div style="width: 100%;display: inline-block;">
+                                    <p class="text-bold">I would like to be contacted at</p>
+                                    <select class="form-control" name="contactedAt">
+                                        <option>Home</option>
+                                        <option>Office</option>
+                                        <option>Given Address</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div style="width: 100%;display: inline-block;">
+                                    <p class="text-bold">Promotional Interested in</p>
+                                    <select class="form-control" name="interestedProducts">
+                                        <option>Individual</option>
+                                        <option>Group</option>
+                                        <option>Both</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-warning profile-button" value="Submit" onclick="validatForm()">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 col-xs-6 footer-left">
+                    <strong>
+                        <span class="sub">FAQs</span>
+                        <span style="color: #0a66b3; padding: 0px 6px 0px 6px;">Register for Updates
+                        </span>
+                    </strong>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 col-xs-6 footer-right">
+                    <strong>
+                        <span style="padding:0px 6px 0px 6px;color:#0a66b3;text-align: -webkit-right"> Follow us on:
+                        </span>
+                        <a href="#" id="foot" class="fa fa-facebook"></a>
+                        <a href="#" id="foot" class=" fa fa-twitter"></a>
+                        <a href="#" id="foot" class="fa fa-youtube"></a>
+                    </strong>
+                </div> -->
+            </div>
+        </footer>
+
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="../Assets/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="../Assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../Assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- AdminLTE App -->
+        <script src="../Assets/dist/js/adminlte.min.js"></script>
+
+        <script src="../Assets/js/common.js"></script>
+        <script src="ContactUs.js"></script>
+        <script src="../Global/global.js"></script>
+        <script src="../Chatbot/chatbot-window-10092019.js"></script>
+        <script>
+            sideNavBar.innerHTML = getPreLoginSideBar('../');
+        </script>
+
+</body>
+
+</html>

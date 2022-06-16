@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy Access - My Policy Details</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../Assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../Assets/bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../Assets/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../Assets/dist/css/skins/_all-skins.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- Common css -->
+    <link rel="stylesheet" href="../Assets/css/common.css">
+    <link rel="stylesheet" href="../Chatbot/chatbot-css.css">
+    <!-- <link rel="stylesheet" href="../Assets/css/custom.css"> -->
+    <style>
+        .viewDetailsBtn {
+            height: 40px;
+            margin-top: 10px;
+            background-color: #db5b06;
+            border-color: none;
+            border-color: #db5b06;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini element">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+
+            <nav class="navbar  navbar-static-top" id="navbar">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" style="display: none" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <span class="logo-head" style="display: inline-block;margin-left: 20px;padding: 5px 0px;">
+                    <b style="font-weight: 600;font-size: 20px;">My Policy Details</b>
+                </span>
+            </nav>
+        </header>
+
+        <aside class="main-sidebar" id="sideNavBar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li>
+                        <a href="../ViewPolicy/ViewPolicy.html">
+                            <img class="nav-icon" src="../Assets/images/home.png">
+                            <span>View Policy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Queries/Queries.html">
+                            <img class="nav-icon" src="../Assets/images/speech-bubble.png">
+                            <span>Queries</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../MyInfo/MyInfo.html">
+                            <img class="nav-icon" src="../Assets/images/layers.png">
+                            <span>My Info</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Forms/Forms.html">
+                            <img class="nav-icon" src="../Assets/images/paper-pencil-and-calculator.png">
+                            <span>Forms</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../RenewalPremium-Login/RenewalPremiumPostLogin.html">
+                            <img class="nav-icon" src="../Assets/images/shopping-cart.png">
+                            <span>Pay Renewal Premium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../E-Statement/eStatement.html">
+                            <img class="nav-icon" src="../Assets/images/link.png">
+                            <span>E-Statement / PPC</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Services/Services.html">
+                            <img class="nav-icon" src="../Assets/images/customer-service.png">
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="onLogOut('../')">
+                            <img class="nav-icon" src="../Assets/images/logout.png">
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <div id="wait" style="display:none;z-index:1000;width:69px;height:89px;position:absolute;top:50%;left:50%;padding:2px;">
+                <img src='../Assets/images/demo_wait.gif' width="64" height="64" />
+                <br>
+            </div>
+
+            <!-- Content Header (Page header) -->
+            <!-- Main content -->
+            <section class="content">
+                <!-- Main div start from here-->
+                <!--<div class="box-header">
+                    <h3 class="box-title">View Policy</h3>
+                </div>-->
+
+                <div class="container" style="width: 100%;">
+                    <div class="tabs">
+                        <div class="tabs_gotoWrap">
+                            <button class="tabs_goto -active">Customer Information</button>
+                            <button class="tabs_goto">Policy Information</button>
+                        </div>
+                        <div class="tabs_sectionsWrap">
+                            <!-- Section One-->
+                            <section class="tabs_section -open" style="padding: 0px;">
+                                <div class="container" style="width:100%;">
+                                    <div class="row">
+                                        <div class="col-xs-12" style="padding: 0px;">
+                                            <div class="table-responsive" style="margin-bottom: 0px;">
+                                                <table class="table table-bordered table-hover">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="col-md-3">Product Name</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblProductName"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Policy Holder</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblPolicyHolderName"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Nominee</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblNominee"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Address</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblAddress"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Channel</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblChannel"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Channel ID</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblChannelID"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Comments</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblComments"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Policy Number</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblPolicyNo"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Proposal Number</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblProposalNo"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Frequency</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblFrequency"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Sum Assured</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblSumAssured"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Inst Premium</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblInstPremium"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Date of Commencement</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblDOC"></label>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Status</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblStatus"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">First Unpaid Premium Date</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblFirstUnpaidPremDate"></label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!--end of .table-responsive-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- end Section One-->
+                            <!--- Second Tab --->
+                            <section class="tabs_section" style="padding: 0px;">
+                                <div class="container" style="width:100%;">
+                                    <div class="row">
+                                        <div class="col-xs-12" style="padding: 0px;">
+                                            <div class="table-responsive" style="margin-bottom: 0px;">
+                                                <table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="col-md-3">Rider Name</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblRiderName"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Sum Assured</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblSumAssuredPolicy"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Risk Premium</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblRiskPremium"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Premium Term</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblPremiumTerm"></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="col-md-3">Benefit Term</th>
+                                                            <td>
+                                                                <label style="font-weight:normal;" id="lblBenefitTerm"></label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+                                            <!--end of .table-responsive-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!---end Second Tab --->
+                            <div class="row" style="margin-left: unset;">
+                                <div class="col-sm-6 col-xs-6" style="padding: unset;">
+                                    <button type="button" style="width:100%;margin-top: 10px; height: 52px;" class="btnsubmit" data-toggle="modal" data-target="#modalPaymentSummary">Payment History</button>
+                                </div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <button type="button" style="width: 100%; margin-top: 10px; height: 52px;" class="btnreset" data-toggle="modal" data-target="#modalServicingHistory">Servicing History</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Payment Summary-->
+                    <div class="modal fade" id="modalPaymentSummary" role="dialog" style="overflow-y: hidden;">
+                        <div class="modal-dialog" id="dialogPayment" style="margin-top: 205px;">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color: #05386d;color:#fff;">
+                                    <button type="button" class="close" data-dismiss="modal" style="color:#fff">&times;</button>
+                                    <h4 class="modal-title">Payment Summary</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container" style="width:100%;">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-hover">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="col-md-4">Total Premium Paid </th>
+                                                                <td>
+                                                                    <label style="font-weight:normal;" id="lblTotalPremiumPaid"></label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">Last Unpaid Date</th>
+                                                                <td>
+                                                                    <label style="font-weight:normal;" id="lblLastUnpaidDate"></label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--end of .table-responsive-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Modal -->
+
+                    <!-- Modal Servicing History-->
+                    <div class="modal fade" id="modalServicingHistory" role="dialog" style="overflow-y: hidden;">
+                        <div class="modal-dialog" id="dialogServicing" style="margin-top: 205px;">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color: #05386d;color:#fff;">
+                                    <button type="button" class="close" style="color:#fff" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Servicing History</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <!--Table -->
+                                    <div class="container" style="width:100%;">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-hover">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="col-md-4">DOP </th>
+                                                                <td>
+                                                                    <label style="font-weight:normal;" id="lblDOP"></label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">Place</th>
+                                                                <td>
+                                                                    <label style="font-weight:normal;" id="lblPlace"></label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">User ID</th>
+                                                                <td>
+                                                                    <label style="font-weight:normal;" id="lblUserID"></label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="col-md-4">Description</th>
+                                                                <td>
+                                                                    <label style="font-weight:normal;" id="lblDescription"></label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--end of .table-responsive-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end table-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Modal -->
+                </div>
+            </section>
+        </div>
+        <!-- ./wrapper -->
+        <!-- jQuery 3 -->
+        <script src="../Assets/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="../Assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../Assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../Assets/dist/js/adminlte.min.js"></script>
+        <script src="../Global/Global.js"></script>
+        <script>
+            sideNavBar.innerHTML = getPostLoginSideBar('../');
+        </script>
+        <script src="../Assets/js/common.js"></script>
+        <script src="MyPolicyDetails.js"></script>
+        <script src="../Assets/js/aes.js"></script>
+        <script src="../Chatbot/chatbot-window-10092019.js"></script>
+    </div>
+</body>
+
+</html>
